@@ -1,15 +1,34 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "server.js",
-      "use": "@vercel/node"
+  "cleanUrls": true,
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "data/**"
     }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/server.js"
-    }
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/index.js" },
+    { "source": "/home", "destination": "/index.html" },
+    { "source": "/prepare-siele", "destination": "/prepare-siele.html" },
+    { "source": "/comprobar-certificado", "destination": "/comprobar-certificado.html" },
+    { "source": "/check-certificate", "destination": "/comprobar-certificado.html" },
+    { "source": "/examenes", "destination": "/examenes.html" },
+    { "source": "/modalidades", "destination": "/examenes.html" },
+    { "source": "/conoce-siele", "destination": "/conoce-siele.html" },
+    { "source": "/encuentra-centro", "destination": "/encuentra-centro.html" },
+    { "source": "/encuentre-el-centro", "destination": "/encuentra-centro.html" },
+    { "source": "/login", "destination": "/login.html" },
+    { "source": "/portallogin", "destination": "/login.html" },
+    { "source": "/es/portallogin", "destination": "/login.html" },
+    { "source": "/pt/portallogin", "destination": "/login.html" },
+    { "source": "/en/portallogin", "destination": "/login.html" },
+    { "source": "/fr/portallogin", "destination": "/login.html" },
+    { "source": "/mi-pagina", "destination": "/mi-pagina.html" },
+    { "source": "/web/guest/mi-pagina", "destination": "/mi-pagina.html" },
+    { "source": "/es/mi-pagina", "destination": "/mi-pagina.html" },
+    { "source": "/pt/mi-pagina", "destination": "/mi-pagina.html" },
+    { "source": "/en/mi-pagina", "destination": "/mi-pagina.html" },
+    { "source": "/fr/mi-pagina", "destination": "/mi-pagina.html" },
+    { "source": "/ayuda", "destination": "/ayuda.html" },
+    { "source": "/faq", "destination": "/ayuda.html" }
   ]
 }

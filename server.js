@@ -10,11 +10,18 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Data paths
+// Data paths & embedded fallbacks for Vercel Serverless
+const DEFAULT_CERTIFICATES = require('./data/certificates.json');
+const DEFAULT_USERS = require('./data/users.json');
+
 const CERTIFICATES_FILE = path.join(__dirname, 'data', 'certificates.json');
 const BOOKINGS_FILE = path.join(__dirname, 'data', 'bookings.json');
 const CONTACTS_FILE = path.join(__dirname, 'data', 'contacts.json');
 const USERS_FILE = path.join(__dirname, 'data', 'users.json');
+const TMP_USERS_FILE = '/tmp/siele_users.json';
+const TMP_BOOKINGS_FILE = '/tmp/siele_bookings.json';
+const TMP_CONTACTS_FILE = '/tmp/siele_contacts.json';
+const TMP_CERTIFICATES_FILE = '/tmp/siele_certificates.json';
 const PDF_CERTIFICATE_FILE = path.join(__dirname, 'data', 'SIELE_Certificado_Oficial.pdf');
 const PDF_CERTIFICATE_EN_FILE = path.join(__dirname, 'data', 'SIELE_Certificado_Oficial_EN.pdf');
 
@@ -152,55 +159,84 @@ const CENTERS_CATALOG = [
 // Helpers
 function loadCertificates() {
   try {
-    const raw = fs.readFileSync(CERTIFICATES_FILE, 'utf-8');
-    return JSON.parse(raw);
+    if (fs.existsSync(TMP_CERTIFICATES_FILE)) {
+      return JSON.parse(fs.readFileSync(TMP_CERTIFICATES_FILE, 'utf-8'));
+    }
+    if (fs.existsSync(CERTIFICATES_FILE)) {
+      return JSON.parse(fs.readFileSync(CERTIFICATES_FILE, 'utf-8'));
+    }
   } catch (err) {
     console.error('Error loading certificates:', err);
-    return [];
   }
+  return DEFAULT_CERTIFICATES;
 }
 
 function saveCertificates(data) {
-  try { fs.writeFileSync(CERTIFICATES_FILE, JSON.stringify(data, null, 2), 'utf-8'); } catch (e) {}
+  try {
+    fs.writeFileSync(CERTIFICATES_FILE, JSON.stringify(data, null, 2), 'utf-8');
+  } catch (e) {
+    try { fs.writeFileSync(TMP_CERTIFICATES_FILE, JSON.stringify(data, null, 2), 'utf-8'); } catch (e2) {}
+  }
 }
 
 function loadBookings() {
   try {
-    const raw = fs.readFileSync(BOOKINGS_FILE, 'utf-8');
-    return JSON.parse(raw);
-  } catch (err) {
-    return [];
-  }
+    if (fs.existsSync(TMP_BOOKINGS_FILE)) {
+      return JSON.parse(fs.readFileSync(TMP_BOOKINGS_FILE, 'utf-8'));
+    }
+    if (fs.existsSync(BOOKINGS_FILE)) {
+      return JSON.parse(fs.readFileSync(BOOKINGS_FILE, 'utf-8'));
+    }
+  } catch (err) {}
+  return [];
 }
 
 function saveBookings(data) {
-  try { fs.writeFileSync(BOOKINGS_FILE, JSON.stringify(data, null, 2), 'utf-8'); } catch (e) {}
+  try {
+    fs.writeFileSync(BOOKINGS_FILE, JSON.stringify(data, null, 2), 'utf-8');
+  } catch (e) {
+    try { fs.writeFileSync(TMP_BOOKINGS_FILE, JSON.stringify(data, null, 2), 'utf-8'); } catch (e2) {}
+  }
 }
 
 function loadContacts() {
   try {
-    const raw = fs.readFileSync(CONTACTS_FILE, 'utf-8');
-    return JSON.parse(raw);
-  } catch (err) {
-    return [];
-  }
+    if (fs.existsSync(TMP_CONTACTS_FILE)) {
+      return JSON.parse(fs.readFileSync(TMP_CONTACTS_FILE, 'utf-8'));
+    }
+    if (fs.existsSync(CONTACTS_FILE)) {
+      return JSON.parse(fs.readFileSync(CONTACTS_FILE, 'utf-8'));
+    }
+  } catch (err) {}
+  return [];
 }
 
 function saveContacts(data) {
-  try { fs.writeFileSync(CONTACTS_FILE, JSON.stringify(data, null, 2), 'utf-8'); } catch (e) {}
+  try {
+    fs.writeFileSync(CONTACTS_FILE, JSON.stringify(data, null, 2), 'utf-8');
+  } catch (e) {
+    try { fs.writeFileSync(TMP_CONTACTS_FILE, JSON.stringify(data, null, 2), 'utf-8'); } catch (e2) {}
+  }
 }
 
 function loadUsers() {
   try {
-    const raw = fs.readFileSync(USERS_FILE, 'utf-8');
-    return JSON.parse(raw);
-  } catch (err) {
-    return [];
-  }
+    if (fs.existsSync(TMP_USERS_FILE)) {
+      return JSON.parse(fs.readFileSync(TMP_USERS_FILE, 'utf-8'));
+    }
+    if (fs.existsSync(USERS_FILE)) {
+      return JSON.parse(fs.readFileSync(USERS_FILE, 'utf-8'));
+    }
+  } catch (err) {}
+  return DEFAULT_USERS;
 }
 
 function saveUsers(data) {
-  try { fs.writeFileSync(USERS_FILE, JSON.stringify(data, null, 2), 'utf-8'); } catch (e) {}
+  try {
+    fs.writeFileSync(USERS_FILE, JSON.stringify(data, null, 2), 'utf-8');
+  } catch (e) {
+    try { fs.writeFileSync(TMP_USERS_FILE, JSON.stringify(data, null, 2), 'utf-8'); } catch (e2) {}
+  }
 }
 
 function sanitizeUser(u) {
