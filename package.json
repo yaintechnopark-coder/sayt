@@ -4,6 +4,7 @@
   "description": "SIELE Portal Clone with Certificate Verification API & Booking Backend",
   "main": "server.js",
   "scripts": {
+    "build": "mkdir -p public && cp -R css js images data *.html favicon.ico public/",
     "start": "node server.js",
     "dev": "node server.js"
   },

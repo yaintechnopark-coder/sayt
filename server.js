@@ -729,7 +729,12 @@ app.put('/api/user/password', (req, res) => {
   });
 });
 
-// Serve frontend static files
+// Serve frontend static files (explicit directory mounts so @vercel/nft bundles css, js, images, data)
+app.use('/css', express.static(path.join(__dirname, 'css')));
+app.use('/js', express.static(path.join(__dirname, 'js')));
+app.use('/images', express.static(path.join(__dirname, 'images')));
+app.use('/data', express.static(path.join(__dirname, 'data')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname)));
 
 // Dedicated routes for frontend pages

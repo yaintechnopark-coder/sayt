@@ -1,8 +1,11 @@
 {
   "cleanUrls": true,
   "functions": {
+    "server.js": {
+      "includeFiles": "{css/**,js/**,images/**,data/**,*.html,favicon.ico}"
+    },
     "api/index.js": {
-      "includeFiles": "data/**"
+      "includeFiles": "{css/**,js/**,images/**,data/**,*.html,favicon.ico}"
     }
   },
   "rewrites": [
