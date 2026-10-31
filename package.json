@@ -1,0 +1,17 @@
+{
+  "name": "siele-platform",
+  "version": "1.0.0",
+  "description": "SIELE Portal Clone with Certificate Verification API & Booking Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["siele", "spanish", "certificate", "exam"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0"
+  }
+}

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="ayuda_page_title">Ayuda y Preguntas Frecuentes - SIELE</title>
+  <meta name="description" content="Centro de ayuda oficial de SIELE. Encuentra respuestas sobre inscripción, exámenes, certificados y soporte técnico." />
+  <link rel="icon" type="image/png" href="images/partners/favicon.png" />
+  <link rel="apple-touch-icon" href="images/partners/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__left">
+          <a href="/" class="logo" aria-label="SIELE Inicio">
+            <img src="images/partners/siele_logo.png" alt="SIELE - Servicio Internacional de Evaluación de la Lengua Española" class="logo__img" />
+          </a>
+          <nav class="lang" aria-label="Idioma">
+            <a href="#" class="active" data-lang="es" id="lang-es">ES</a>
+            <a href="#" data-lang="pt" id="lang-pt">PT</a>
+            <a href="#" data-lang="en" id="lang-en">EN</a>
+            <a href="#" data-lang="fr" id="lang-fr">FR</a>
+          </nav>
+        </div>
+        <div class="header__actions">
+          <a href="#" class="btn btn--solid btn-reserva" id="btn-reserva" data-i18n="header_reserva">Reserva tu examen</a>
+          <a href="/login" class="btn" id="btn-acceder" data-i18n="header_acceder">Acceder</a>
+          <button class="burger" id="burger" aria-label="Menú"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <div class="nav__item">
+          <span class="nav__link" data-i18n="nav_0_title">¿Por qué SIELE?</span>
+          <div class="dropdown">
+            <a href="/conoce-siele" data-i18n="nav_0_0">Conoce SIELE</a>
+            <a href="/conoce-siele#reconocimiento" data-i18n="nav_0_1">Reconocimiento</a>
+            <a href="/#universidades" data-i18n="nav_0_2">Instituciones asociadas</a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <span class="nav__link" data-i18n="nav_1_title">Examínate</span>
+          <div class="dropdown">
+            <a href="/examenes" data-i18n="nav_1_0">Modalidades</a>
+            <a href="/examenes#pruebas" data-i18n="nav_1_1">En el centro</a>
+            <a href="/encuentra-centro" data-i18n="nav_1_2">Encuentra tu centro</a>
+            <a href="/prepare-siele" data-i18n="nav_1_3">Curso de preparación</a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <span class="nav__link" data-i18n="nav_2_title">Centros de examen</span>
+          <div class="dropdown">
+            <a href="/ayuda#ser-centro" data-i18n="nav_2_0">¿Quieres ser centro SIELE?</a>
+            <a href="/login" data-i18n="nav_2_1">Gestiona tu centro</a>
+            <a href="/prepare-siele" data-i18n="nav_2_2">Conviértete en preparador</a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <span class="nav__link" data-i18n="nav_3_title">Organizaciones</span>
+          <div class="dropdown">
+            <a href="/conoce-siele#fortalezas" data-i18n="nav_3_0">Ventajas</a>
+            <a href="/conoce-siele" data-i18n="nav_3_1">Blog</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= PAGE HERO ================= -->
+    <section class="page-hero" style="background: linear-gradient(135deg, #2b1f2b 0%, #442a3a 100%);">
+      <div class="container">
+        <div class="page-hero__content">
+          <h1 class="page-hero__title" data-i18n="ayuda_hero_title">¿CÓMO PODEMOS AYUDARTE?</h1>
+          <p style="font-size: 16px; margin-top: 10px; opacity: 0.9;" data-i18n="ayuda_hero_sub">Encuentra respuestas a las preguntas más frecuentes sobre la certificación SIELE</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ SECTION ================= -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="ayuda_faq_title">Preguntas Frecuentes</h2>
+
+        <div class="faq-accordion" id="faq-accordion">
+          
+          <div class="faq-item active">
+            <button class="faq-question">
+              <span data-i18n="ayuda_q1">¿Qué es el examen SIELE y en qué se diferencia de otros exámenes?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer" data-i18n-html="ayuda_a1">
+              SIELE es el Servicio Internacional de Evaluación de la Lengua Española, promovido por el Instituto Cervantes, la UNAM, la USAL y la UBA. A diferencia de otros exámenes tradicionales, es 100% digital, multinivel (no se aprueba ni se suspende: siempre obtienes una puntuación correlacionada con los niveles A1 a C1 del MCER) y los resultados oficiales se entregan en un plazo máximo de tres semanas.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span data-i18n="ayuda_q2">¿Cuánto tiempo de vigencia tiene el certificado oficial SIELE?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer" data-i18n-html="ayuda_a2">
+              El certificado y el informe de calificación de SIELE tienen una vigencia oficial de <strong>5 años</strong> a partir de la fecha de realización de las pruebas.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span data-i18n="ayuda_q3">¿Cómo puedo verificar la autenticidad de un certificado SIELE?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer" data-i18n-html="ayuda_a3">
+              Cualquier entidad, empresa o universidad puede consultar y validar en tiempo real la autenticidad del documento a través de nuestra sección <a href="/comprobar-certificado" style="color:#d62538; font-weight:700;">Comprobar Certificado</a> introduciendo el código alfanumérico seguro que figura en el informe.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span data-i18n="ayuda_q4">¿Cuáles son las modalidades de examen disponibles?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer" data-i18n-html="ayuda_a4">
+              Existen dos opciones: <strong>SIELE Global</strong>, que evalúa las cuatro competencias lingüísticas (Comprensión de Lectura, Auditiva, Expresión Escrita y Expresión Oral), o cualquiera de las <strong>cinco modalidades independientes (S1 a S5)</strong> que combinan pruebas específicas según las necesidades del candidato o institución.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span data-i18n="ayuda_q5">¿Cómo puedo inscribirme y seleccionar fecha en un centro examinador?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer" data-i18n-html="ayuda_a5">
+              Puede reservar su convocatoria en cualquier momento haciendo clic en el botón superior <strong>"Reserva tu examen"</strong> o explorando el mapa de centros autorizados en <a href="/encuentra-centro" style="color:#d62538; font-weight:700;">Encuentra tu centro</a>. Podrá elegir la fecha y el horario que mejor se adapte a su calendario.
+            </div>
+          </div>
+
+          <div class="faq-item" id="ser-centro">
+            <button class="faq-question">
+              <span data-i18n="ayuda_q6">¿Qué requisitos son necesarios para convertirse en Centro de Examen Autorizado SIELE?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer" data-i18n-html="ayuda_a6">
+              Cualquier centro educativo, universidad o instituto de idiomas puede solicitar su homologación como Centro Examinador SIELE. Se requiere disponer de aulas con ordenadores conectados a internet de banda ancha, auriculares con micrófono estandarizados y personal cualificado para la supervisión de convocatorias.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT FORM SECTION ================= -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-card">
+          <h3 data-i18n="ayuda_contact_title">¿Necesitas ayuda personalizada?</h3>
+          <p class="sub" data-i18n="ayuda_contact_sub">Escríbenos y un coordinador de soporte se pondrá en contacto contigo.</p>
+
+          <div id="contact-alert" style="display:none; padding:12px 16px; border-radius:4px; font-size:14px; margin-bottom:20px;"></div>
+
+          <form id="contact-form">
+            <div class="booking-field">
+              <label for="contact-name" data-i18n="ayuda_name_label">Nombre completo</label>
+              <input type="text" id="contact-name" required placeholder="Tu nombre" data-i18n-attr="placeholder:ayuda_name_ph" />
+            </div>
+
+            <div class="booking-field">
+              <label for="contact-email" data-i18n="ayuda_email_label">Correo electrónico</label>
+              <input type="email" id="contact-email" required placeholder="correo@ejemplo.com" data-i18n-attr="placeholder:ayuda_email_ph" />
+            </div>
+
+            <div class="booking-field">
+              <label for="contact-subject" data-i18n="ayuda_subject_label">Asunto</label>
+              <input type="text" id="contact-subject" required placeholder="Consulta sobre examen o inscripción" data-i18n-attr="placeholder:ayuda_subject_ph" />
+            </div>
+
+            <div class="booking-field booking-field--full">
+              <label for="contact-message" data-i18n="ayuda_msg_label">Mensaje</label>
+              <textarea id="contact-message" rows="5" required placeholder="Describe tu consulta con detalle..." data-i18n-attr="placeholder:ayuda_msg_ph" style="width:100%; padding:10px 14px; border:1px solid #ccc; border-radius:4px; font-family:inherit; font-size:14.5px;"></textarea>
+            </div>
+
+            <button type="submit" class="booking-submit-btn" id="contact-submit-btn" data-i18n="ayuda_submit">Enviar Consulta</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer__links">
+      <div class="container">
+        <div class="footer__btns">
+          <a href="/comprobar-certificado" class="btn" id="btn-certificado" data-i18n="footer_cert">Comprobar Certificado</a>
+          <a href="/ayuda" class="btn" id="btn-ayuda" data-i18n="footer_ayuda">Ayuda</a>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/SIELE.org" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6c0-.9.6-1 1-1h3V1h-4c-4 0-5 3-5 5v2H6v4h3v11h5V12h3.5l.5-4z"/></svg></a>
+          <a href="https://twitter.com/SIELE_org" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"><path d="M13.7 10.3 20.4 2.5h-1.6l-5.8 6.8-4.7-6.8H2.9l7 10.2-7 8.2h1.6l6.1-7.1 4.9 7.1h5.4l-7.2-10.6zm-2.2 2.5-.7-1L5.1 3.7h2.4l4.6 6.5.7 1 5.9 8.5h-2.4l-4.8-6.9z"/></svg></a>
+          <a href="https://www.linkedin.com/company/siele" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M2 8h4.5v14H2zM4.2 1.5a2.6 2.6 0 1 1 0 5.2 2.6 2.6 0 0 1 0-5.2zM9 8h4.3v2h.1c.6-1.1 2.1-2.3 4.3-2.3 4.6 0 5.4 3 5.4 6.9V22h-4.5v-6.6c0-1.6 0-3.6-2.2-3.6s-2.5 1.7-2.5 3.5V22H9z"/></svg></a>
+          <a href="https://www.youtube.com/channel/UCcJZoqQ7Akk5ny714iUMHnQ" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1z"/></svg></a>
+          <a href="https://www.instagram.com/siele_oficial/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-9.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__logos">
+      <div class="container">
+        <div>
+          <div class="footer__label" data-i18n="footer_dev_by">Creado y desarrollado por:</div>
+          <div class="partners">
+            <a href="https://www.cervantes.es" target="_blank" rel="noopener" class="partner partner--cervantes" aria-label="Instituto Cervantes"><img src="images/partners/cervantes.png" alt="Instituto Cervantes" /></a>
+            <a href="https://www.unam.mx/" target="_blank" rel="noopener" class="partner partner--unam" aria-label="Universidad Nacional Autónoma de México"><img src="images/partners/unam.png" alt="UNAM" /></a>
+            <a href="https://www.usal.es" target="_blank" rel="noopener" class="partner partner--salamanca" aria-label="Universidad de Salamanca"><img src="images/partners/salamanca.png" alt="Universidad de Salamanca" /></a>
+            <a href="https://www.uba.ar/" target="_blank" rel="noopener" class="partner partner--uba" aria-label="Universidad de Buenos Aires"><img src="images/partners/uba.png" alt="Universidad de Buenos Aires" /></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__label" data-i18n="footer_managed_by">Gestionado por:</div>
+          <a href="https://www.telefonicaeducaciondigital.com/" target="_blank" rel="noopener" class="partner partner--telefonica" aria-label="Telefónica Educación Digital">
+            <img src="images/partners/telefonica.png" alt="Telefónica" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="subfooter">
+      <a href="/ayuda" data-i18n="subfooter_0">Aviso legal</a> | <a href="/ayuda" data-i18n="subfooter_1">Política de privacidad</a> | <a href="#" id="cookie-config" data-i18n="subfooter_2">Configuración de cookies</a> | <a href="/ayuda" data-i18n="subfooter_3">Términos y Condiciones de Contratación</a>
+    </div>
+  </footer>
+
+  <!-- ================= COOKIE BUTTON & BAR ================= -->
+  <button class="cookie-fab" id="cookie-fab" aria-label="Configuración de privacidad y cookies" title="Privacidad">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M21 12a9 9 0 1 1-9-9 3 3 0 0 0 3 3 3 3 0 0 0 3 3 3 3 0 0 0 3 3z"/><circle cx="8.5" cy="10" r="1.2"/><circle cx="9" cy="15.5" r="1.2"/><circle cx="14.5" cy="15" r="1.2"/></svg>
+  </button>
+
+  <div class="cookie-bar" id="cookie-bar" role="dialog" aria-label="Aviso de cookies">
+    <span id="cookie-text" data-i18n-html="cookie_text">Utilizamos cookies propias y de terceros para mejorar la calidad de nuestros servicios mediante el análisis de sus hábitos de navegación. Si continúa navegando, consideramos que acepta su uso. Puede cambiar la configuración u obtener más información <a href="#">aquí</a>.</span>
+    <button class="cookie-bar__close" id="cookie-close" aria-label="Cerrar">✕</button>
+  </div>
+
+  <!-- ================= MODAL: RESERVA TU EXAMEN ================= -->
+  <div class="modal-backdrop" id="modal-booking">
+    <div class="modal-card" role="dialog" aria-labelledby="modal-booking-title">
+      <button class="modal-close" id="modal-booking-close" aria-label="Cerrar">&times;</button>
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-booking-title" data-i18n="modal_reserva_title">Reserva tu Examen SIELE</h3>
+        <p class="modal-subtitle" data-i18n="modal_reserva_subtitle">Complete el formulario para solicitar fecha en su centro examinador más cercano.</p>
+      </div>
+
+      <div id="booking-alert" class="booking-alert"></div>
+
+      <form id="booking-form" class="booking-form">
+        <div class="booking-field">
+          <label for="book-name" data-i18n="modal_reserva_name">Nombre completo:</label>
+          <input type="text" id="book-name" required placeholder="Alejandro Morales" />
+        </div>
+        <div class="booking-field">
+          <label for="book-email" data-i18n="modal_reserva_email">Correo electrónico:</label>
+          <input type="email" id="book-email" required placeholder="candidato@email.com" />
+        </div>
+        <div class="booking-field">
+          <label for="book-phone" data-i18n="modal_reserva_phone">Teléfono:</label>
+          <input type="tel" id="book-phone" placeholder="+34 600 000 000" />
+        </div>
+        <div class="booking-field">
+          <label for="book-modality" data-i18n="modal_reserva_modality">Modalidad de examen:</label>
+          <select id="book-modality" required>
+            <option value="SIELE Global" data-i18n="modal_opt_global">SIELE Global (4 pruebas: CL + CA + EIE + EIO)</option>
+            <option value="S1" data-i18n="modal_opt_s1">S1 (Comprensión de Lectura + Auditiva)</option>
+            <option value="S2" data-i18n="modal_opt_s2">S2 (Comprensión de Lectura + Expresión Escrita)</option>
+            <option value="S3" data-i18n="modal_opt_s3">S3 (Comprensión Auditiva + Expresión Oral)</option>
+            <option value="S4" data-i18n="modal_opt_s4">S4 (Expresión e Interacción Orales)</option>
+            <option value="S5" data-i18n="modal_opt_s5">S5 (Expresión Escrita + Expresión Oral)</option>
+          </select>
+        </div>
+        <div class="booking-field booking-field--full">
+          <label for="book-date" data-i18n="modal_reserva_date">Fecha preferida:</label>
+          <input type="date" id="book-date" required />
+        </div>
+        <button type="submit" id="book-submit-btn" class="booking-submit-btn" data-i18n="modal_reserva_submit">Confirmar Reserva</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/translations.js"></script>
+  <script src="js/page-common.js"></script>
+  <script>
+    (function() {
+      // FAQ Accordion
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const btn = item.querySelector('.faq-question');
+        btn.addEventListener('click', () => {
+          const isActive = item.classList.contains('active');
+          faqItems.forEach(i => i.classList.remove('active'));
+          if (!isActive) {
+            item.classList.add('active');
+          }
+        });
+      });
+
+      // Contact Form (Connected to Backend /api/contact)
+      const contactForm = document.getElementById('contact-form');
+      const contactAlert = document.getElementById('contact-alert');
+      const contactSubmitBtn = document.getElementById('contact-submit-btn');
+
+      contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const name = document.getElementById('contact-name').value.trim();
+        const email = document.getElementById('contact-email').value.trim();
+        const subject = document.getElementById('contact-subject').value.trim();
+        const message = document.getElementById('contact-message').value.trim();
+
+        if (!name || !email || !message) return;
+
+        if (contactSubmitBtn) {
+          contactSubmitBtn.disabled = true;
+          contactSubmitBtn.textContent = 'Enviando...';
+        }
+
+        try {
+          const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, subject, message })
+          });
+          const data = await res.json();
+
+          contactAlert.style.display = 'block';
+          if (res.ok && data.success) {
+            contactAlert.style.background = '#d4edda';
+            contactAlert.style.color = '#155724';
+            contactAlert.style.border = '1px solid #c3e6cb';
+            contactAlert.innerHTML = `<strong>¡Gracias por contactar con SIELE!</strong><br>${data.message}<br><small>Referencia de ticket: <b>${data.ticket.id}</b></small>`;
+            contactForm.reset();
+          } else {
+            contactAlert.style.background = '#f8d7da';
+            contactAlert.style.color = '#721c24';
+            contactAlert.style.border = '1px solid #f5c6cb';
+            contactAlert.textContent = data.message || 'Error al enviar la consulta.';
+          }
+        } catch (err) {
+          contactAlert.style.display = 'block';
+          contactAlert.style.background = '#f8d7da';
+          contactAlert.style.color = '#721c24';
+          contactAlert.style.border = '1px solid #f5c6cb';
+          contactAlert.textContent = 'Error de conexión con el servidor.';
+        } finally {
+          if (contactSubmitBtn) {
+            contactSubmitBtn.disabled = false;
+            contactSubmitBtn.textContent = 'Enviar Consulta';
+          }
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

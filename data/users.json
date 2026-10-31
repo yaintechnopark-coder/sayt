@@ -1,0 +1,152 @@
+[
+  {
+    "id": "31709473",
+    "email": "qilichbek00000@gmail.com",
+    "password": "3PsP9?frgj",
+    "firstName": "Sayyoraxon",
+    "lastName": "Tojiddinova",
+    "fullName": "Tojiddinova, Sayyoraxon",
+    "phone": "998918410105",
+    "birthday": "30/11/1998",
+    "birthdayDay": 30,
+    "birthdayMonth": 10,
+    "birthdayYear": 1998,
+    "inscriptionMails": true,
+    "document": "Documento Identidad - AE1794960",
+    "pdfFile": "SIELE_Certificado_Oficial.pdf",
+    "pdfFileEn": "SIELE_Certificado_Oficial_EN.pdf",
+    "role": "candidato",
+    "exams": [
+      {
+        "reservationId": "4723500",
+        "examName": "SIELE Global",
+        "icon": "images/portal/siele_global_icon.png",
+        "statusKey": "graded",
+        "codeDiploma": "TC5yiNIEszhWBiNEt4D5tw==",
+        "pdfFile": "SIELE_Certificado_Oficial.pdf",
+        "pdfFileEn": "SIELE_Certificado_Oficial_EN.pdf",
+        "certificateEsUrl": "/api/certificates/pdf/es?email=qilichbek00000%40gmail.com",
+        "certificateEnUrl": "/api/certificates/pdf/en?email=qilichbek00000%40gmail.com",
+        "linkedinUrl": "https://www.linkedin.com/profile/add?_ed=0_HtJMp8IScSj4hxAPkhaIcOPhx__k9NQlVW9kRYN2Vvwv3WERdSRzEXIw1DbKH-INaSgvthvZk7wTBMS3S-m0L6A6mLjErM6PJiwMkk6nYZylU7__75hCVwJdOTZCAkdv&pfCertificationName=SIELE+Global&pfCertificationUrl=https%3A%2F%2Fsiele.org%2Fcomprobar-certificado%2F&pfLicenseNo=TC5yiNIEszhWBiNEt4D5tw%3D%3D&trk=onsite_longurl",
+        "sessionInfo": {
+          "sessionTypeKey": "presencial",
+          "exam": "SIELE Global",
+          "startDate": "28-07-2026 15:02",
+          "endDate": "28-07-2026 18:32",
+          "center": "Asliddin School",
+          "address": "Paxtazor 28, Qarshi, Uzbekistán",
+          "room": "Test room 3",
+          "country": "Uzbekistán",
+          "region": "Qashqadaryo Province",
+          "locality": "Qarshi"
+        },
+        "reservationInfo": {
+          "reservationCode": "4723500",
+          "stateKey": "purchased",
+          "purchaseDate": "18-06-2026",
+          "purchasePrice": "0.0€",
+          "price": "145.0€",
+          "couponCode": "LYMFTZCOOM",
+          "reservationStatusKey": "graded"
+        },
+        "candidateInfo": {
+          "userId": "31709473",
+          "fullName": "Tojiddinova, Sayyoraxon",
+          "email": "qilichbek00000@gmail.com",
+          "document": "Documento Identidad - AE1794960",
+          "phone": "998918410105"
+        },
+        "resultsInfo": {
+          "cl": 250,
+          "ca": 204,
+          "eie": 249,
+          "eio": 227,
+          "total": 930
+        }
+      }
+    ],
+    "courses": [
+      {
+        "id": "curso-objetivo-siele",
+        "name": "Objetivo SIELE: preparación y práctica del examen SIELE Global",
+        "icon": "images/portal/curso_objetivo_icon.png",
+        "url": "/prepare-siele"
+      }
+    ]
+  },
+  {
+    "id": "31709812",
+    "email": "toshbekov2000abduvohid@gmail.com",
+    "password": "7KtR9?vbxm",
+    "firstName": "Abduvohid",
+    "lastName": "Toshbekov",
+    "fullName": "Toshbekov, Abduvohid",
+    "phone": "998901234567",
+    "birthday": "15/05/2000",
+    "birthdayDay": 15,
+    "birthdayMonth": 4,
+    "birthdayYear": 2000,
+    "inscriptionMails": true,
+    "document": "Documento Identidad - AD2000451",
+    "pdfFile": "SIELE_Certificado_Abduvohid.pdf",
+    "pdfFileEn": "SIELE_Certificado_Abduvohid_EN.pdf",
+    "role": "candidato",
+    "exams": [
+      {
+        "reservationId": "4723890",
+        "examName": "SIELE Global",
+        "icon": "images/portal/siele_global_icon.png",
+        "statusKey": "graded",
+        "codeDiploma": "K9mXvR7pQ2wLz8nJ4bY6cA==",
+        "pdfFile": "SIELE_Certificado_Abduvohid.pdf",
+        "pdfFileEn": "SIELE_Certificado_Abduvohid_EN.pdf",
+        "certificateEsUrl": "/api/certificates/pdf/es?email=toshbekov2000abduvohid%40gmail.com",
+        "certificateEnUrl": "/api/certificates/pdf/en?email=toshbekov2000abduvohid%40gmail.com",
+        "linkedinUrl": "https://www.linkedin.com/profile/add?_ed=0_HtJMp8IScSj4hxAPkhaIcOPhx__k9NQlVW9kRYN2Vvwv3WERdSRzEXIw1DbKH-INaSgvthvZk7wTBMS3S-m0L6A6mLjErM6PJiwMkk6nYZylU7__75hCVwJdOTZCAkdv&pfCertificationName=SIELE+Global&pfCertificationUrl=https%3A%2F%2Fsiele.org%2Fcomprobar-certificado%2F&pfLicenseNo=K9mXvR7pQ2wLz8nJ4bY6cA%3D%3D&trk=onsite_longurl",
+        "sessionInfo": {
+          "sessionTypeKey": "presencial",
+          "exam": "SIELE Global",
+          "startDate": "28-07-2026 15:02",
+          "endDate": "28-07-2026 18:32",
+          "center": "Asliddin School",
+          "address": "Paxtazor 28, Qarshi, Uzbekistán",
+          "room": "Test room 3",
+          "country": "Uzbekistán",
+          "region": "Qashqadaryo Province",
+          "locality": "Qarshi"
+        },
+        "reservationInfo": {
+          "reservationCode": "4723890",
+          "stateKey": "purchased",
+          "purchaseDate": "18-06-2026",
+          "purchasePrice": "0.0€",
+          "price": "145.0€",
+          "couponCode": "LYMFTZCOOM",
+          "reservationStatusKey": "graded"
+        },
+        "candidateInfo": {
+          "userId": "31709812",
+          "fullName": "Toshbekov, Abduvohid",
+          "email": "toshbekov2000abduvohid@gmail.com",
+          "document": "Documento Identidad - AD2000451",
+          "phone": "998901234567"
+        },
+        "resultsInfo": {
+          "cl": 240,
+          "ca": 215,
+          "eie": 235,
+          "eio": 225,
+          "total": 915
+        }
+      }
+    ],
+    "courses": [
+      {
+        "id": "curso-objetivo-siele",
+        "name": "Objetivo SIELE: preparación y práctica del examen SIELE Global",
+        "icon": "images/portal/curso_objetivo_icon.png",
+        "url": "/prepare-siele"
+      }
+    ]
+  }
+]

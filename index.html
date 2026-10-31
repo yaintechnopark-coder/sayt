@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="home_page_title">SIELE | Certificación Oficial de Español</title>
+  <meta name="description" content="SIELE es la certificación internacional de español para evaluar y acreditar tu nivel de dominio del idioma de forma flexible y reconocida internacionalmente." data-i18n-attr="content:home_meta_desc" />
+  <link rel="icon" type="image/png" href="images/partners/favicon.png" />
+  <link rel="apple-touch-icon" href="images/partners/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__left">
+          <a href="/" class="logo" aria-label="SIELE Inicio">
+            <img src="images/partners/siele_logo.png" alt="SIELE - Servicio Internacional de Evaluación de la Lengua Española" class="logo__img" />
+          </a>
+          <nav class="lang" aria-label="Idioma">
+            <a href="#" class="active" data-lang="es" id="lang-es">ES</a>
+            <a href="#" data-lang="pt" id="lang-pt">PT</a>
+            <a href="#" data-lang="en" id="lang-en">EN</a>
+            <a href="#" data-lang="fr" id="lang-fr">FR</a>
+          </nav>
+        </div>
+        <div class="header__actions">
+          <a href="#" class="btn btn--solid btn-reserva" id="btn-reserva" data-i18n="header_reserva">Reserva tu examen</a>
+          <a href="/login" class="btn" id="btn-acceder" data-i18n="header_acceder">Acceder</a>
+          <button class="burger" id="burger" aria-label="Menú"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <div class="nav__item">
+          <span class="nav__link" data-i18n="nav_0_title">¿Por qué SIELE?</span>
+          <div class="dropdown">
+            <a href="/conoce-siele" data-i18n="nav_0_0">Conoce SIELE</a>
+            <a href="/conoce-siele#reconocimiento" data-i18n="nav_0_1">Reconocimiento</a>
+            <a href="#universidades" data-i18n="nav_0_2">Instituciones asociadas</a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <span class="nav__link" data-i18n="nav_1_title">Examínate</span>
+          <div class="dropdown">
+            <a href="/examenes" data-i18n="nav_1_0">Modalidades</a>
+            <a href="/examenes#pruebas" data-i18n="nav_1_1">En el centro</a>
+            <a href="/encuentra-centro" data-i18n="nav_1_2">Encuentra tu centro</a>
+            <a href="/prepare-siele" data-i18n="nav_1_3">Curso de preparación</a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <span class="nav__link" data-i18n="nav_2_title">Centros de examen</span>
+          <div class="dropdown">
+            <a href="/ayuda#ser-centro" data-i18n="nav_2_0">¿Quieres ser centro SIELE?</a>
+            <a href="/login" data-i18n="nav_2_1">Gestiona tu centro</a>
+            <a href="/prepare-siele" data-i18n="nav_2_2">Conviértete en preparador</a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <span class="nav__link" data-i18n="nav_3_title">Organizaciones</span>
+          <div class="dropdown">
+            <a href="/conoce-siele#fortalezas" data-i18n="nav_3_0">Ventajas</a>
+            <a href="/conoce-siele" data-i18n="nav_3_1">Blog</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ROTATOR ================= -->
+    <section class="home-rotator" id="home-rotator" aria-label="Promociones SIELE">
+      <div class="home-rotator__track">
+        <!-- Slide 1 -->
+        <div class="home-rotator__slide">
+          <img src="images/home_banner_visa.png" alt="Renovación de visado con SIELE" loading="eager" />
+          <div class="home-rotator__overlay"></div>
+          <div class="home-rotator__content">
+            <div class="home-rotator__box">
+              <h1 class="home-rotator__title" data-i18n="home_slide1_title">¿Necesitas renovar tu visado?</h1>
+              <p class="home-rotator__sub" data-i18n="home_slide1_sub">Ahora puedes hacerlo con el certificado SIELE</p>
+              <a href="#" class="home-rotator__btn btn-reserva" data-i18n="home_slide1_btn">Consulta aquí el nuevo decreto</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="home-rotator__slide">
+          <img src="images/home_banner_demuestra.png" alt="Demuestra lo que sabes con SIELE" loading="lazy" />
+          <div class="home-rotator__overlay"></div>
+          <div class="home-rotator__content">
+            <div class="home-rotator__box">
+              <h2 class="home-rotator__title" data-i18n="home_slide2_title">Demuestra lo que sabes</h2>
+              <p class="home-rotator__sub" data-i18n="home_slide2_sub">Es el momento de certificar tu español</p>
+              <a href="#" class="home-rotator__btn btn-reserva" data-i18n="home_slide2_btn">Elige el día y hora aquí</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="home-rotator__slide">
+          <img src="images/home_banner_crecer.png" alt="Tu mejor oportunidad para crecer" loading="lazy" />
+          <div class="home-rotator__overlay"></div>
+          <div class="home-rotator__content">
+            <div class="home-rotator__box">
+              <h2 class="home-rotator__title" data-i18n="home_slide3_title">Tu mejor oportunidad para crecer</h2>
+              <p class="home-rotator__sub" data-i18n="home_slide3_sub">Obtén el nivel de español deseado y viaja a donde quieras</p>
+              <a href="#" class="home-rotator__btn btn-reserva" data-i18n="home_slide3_btn">Consigue aquí tu certificado</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="home-rotator__slide">
+          <img src="images/home_banner_rapidez.png" alt="Rapidez y flexibilidad en todo momento" loading="lazy" />
+          <div class="home-rotator__overlay"></div>
+          <div class="home-rotator__content">
+            <div class="home-rotator__box">
+              <h2 class="home-rotator__title" data-i18n="home_slide4_title">Rapidez y flexibilidad en todo momento</h2>
+              <p class="home-rotator__sub" data-i18n="home_slide4_sub">Resultados en menos de tres semanas</p>
+              <a href="#" class="home-rotator__btn btn-reserva" data-i18n="home_slide4_btn">Elige el día y hora aquí</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="home-rotator__arrow home-rotator__arrow--prev" aria-label="Anterior">‹</button>
+      <button class="home-rotator__arrow home-rotator__arrow--next" aria-label="Siguiente">›</button>
+      <div class="home-rotator__dots"></div>
+    </section>
+
+    <!-- ================= 4 INFO CARDS ================= -->
+    <section class="home-info-section">
+      <div class="container">
+        <div class="home-info-grid">
+          <!-- Card 1 -->
+          <div class="home-info-card">
+            <p class="home-info-desc" data-i18n="home_info1_desc">Se adecúa a tus necesidades de certificación. No se suspende, siempre se obtiene un nivel.</p>
+            <a href="/examenes" class="home-info-link" data-i18n="home_info1_btn">CONOCE LOS EXÁMENES SIELE</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="home-info-card">
+            <p class="home-info-desc" data-i18n="home_info2_desc">En SIELE todo se gestiona electrónicamente y obtendrás tus resultados en un máximo de tres semanas.</p>
+            <a href="/conoce-siele#fortalezas" class="home-info-link" data-i18n="home_info2_btn">CONOCE TODAS LAS VENTAJAS</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="home-info-card">
+            <p class="home-info-desc" data-i18n="home_info3_desc">Eliges el día, la hora y el lugar de entre más de 1000 centros de examen autorizados en más de 85 países.</p>
+            <a href="/encuentra-centro" class="home-info-link" data-i18n="home_info3_btn">VER CENTROS DE EXAMEN</a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="home-info-card">
+            <p class="home-info-desc" data-i18n="home_info4_desc">SIELE está reconocido por organismos internacionales referentes en educación e idiomas.</p>
+            <a href="/conoce-siele#reconocimiento" class="home-info-link" data-i18n="home_info4_btn">CONÓCELOS</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OBJETIVO SIELE SECTION ================= -->
+    <section class="home-prep-section">
+      <div class="container">
+        <div class="home-prep-card">
+          <div class="home-prep-text">
+            <p class="subtitulo" data-i18n="home_prep_sub">¡Consigue el mejor resultado en el examen SIELE!</p>
+            <h2 data-i18n-html="home_prep_title">MATERIAL DE PREPARACIÓN<br>OBJETIVO SIELE</h2>
+            <a href="/prepare-siele" class="btn-outline" data-i18n="home_prep_btn">CONOCE OBJETIVO SIELE</a>
+          </div>
+          <div class="home-prep-image">
+            <img src="images/home_objetivo_prep.png" alt="Material de preparación Objetivo SIELE" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CENTROS DE EXAMEN SECTION ================= -->
+    <section class="home-centers-section" id="centros">
+      <div class="container">
+        <h2 class="home-centers-title" data-i18n="home_centers_title">ELIGE ENTRE MÁS DE 1000 CENTROS DE EXAMEN AUTORIZADOS SIELE</h2>
+        <p class="home-centers-sub" data-i18n="home_centers_sub">PARA CERTIFICAR TU NIVEL DE ESPAÑOL</p>
+        <a href="/encuentra-centro" class="home-centers-map" aria-label="Mapa de centros autorizados">
+          <img src="images/home_mapa_centros.png" alt="Centros de examen SIELE en todo el mundo" loading="lazy" />
+        </a>
+        <a href="/encuentra-centro" class="home-centers-btn" data-i18n="home_centers_btn">VER CENTROS SIELE</a>
+      </div>
+    </section>
+
+    <!-- ================= UNIVERSIDADES ASOCIADAS MARQUEE ================= -->
+    <section class="home-unis-section" id="universidades">
+      <div class="container">
+        <h3 class="home-unis-title" data-i18n="home_unis_title">UNIVERSIDADES ASOCIADAS</h3>
+      </div>
+      <div class="home-unis-marquee" aria-label="Logos de universidades asociadas">
+        <div class="home-unis-track">
+          <div class="home-unis-item"><img src="images/universities/ucm.png" alt="Universidad Complutense de Madrid" /></div>
+          <div class="home-unis-item"><img src="images/universities/uc3m.png" alt="Universidad Carlos III de Madrid" /></div>
+          <div class="home-unis-item"><img src="images/universities/ucr.png" alt="Universidad de Costa Rica" /></div>
+          <div class="home-unis-item"><img src="images/universities/cuenca.png" alt="Universidad de Cuenca" /></div>
+          <div class="home-unis-item"><img src="images/universities/zaragoza.png" alt="Universidad de Zaragoza" /></div>
+          <div class="home-unis-item"><img src="images/universities/ua.png" alt="Universidad de Alicante" /></div>
+          <div class="home-unis-item"><img src="images/universities/uab.png" alt="Universitat Autònoma de Barcelona" /></div>
+          <div class="home-unis-item"><img src="images/universities/uam.png" alt="Universidad Autónoma de Madrid" /></div>
+          <div class="home-unis-item"><img src="images/universities/ugr.png" alt="Universidad de Granada" /></div>
+          <div class="home-unis-item"><img src="images/universities/navarra.png" alt="Universidad de Navarra" /></div>
+          <div class="home-unis-item"><img src="images/universities/uned.png" alt="UNED" /></div>
+          <div class="home-unis-item"><img src="images/universities/valencia.png" alt="Universidad de Valencia" /></div>
+        </div>
+      </div>
+      <div class="container">
+        <a href="/conoce-siele#reconocimiento" class="home-unis-btn" data-i18n="home_unis_btn">VER TODAS</a>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCIAS / TESTIMONIALS ROTATOR ================= -->
+    <section class="home-exp-section" id="home-exp-rotator" aria-label="Experiencias de candidatos">
+      <div class="home-exp-track">
+        <!-- Slide 1 (Azul/Teal) -->
+        <article class="home-exp-slide azul">
+          <p class="home-exp-quote" data-i18n="home_quote1_text">“Ahora que el español es uno de los idiomas más hablados del mundo, no me puedo quedar atrás.”</p>
+          <p class="home-exp-author" data-i18n="home_quote1_author">Janaina Dumes Fidelis, Brasil</p>
+          <p class="home-exp-role" data-i18n="home_quote1_role">Consultora de Formación</p>
+        </article>
+
+        <!-- Slide 2 (Morado/Purple) -->
+        <article class="home-exp-slide morado">
+          <p class="home-exp-quote" data-i18n="home_quote2_text">“SIELE me parece una acreditación esencial para los extranjeros que queremos trabajar en el idioma español.”</p>
+          <p class="home-exp-author" data-i18n="home_quote2_author">Yojhana Amorin Tavares, Portugal</p>
+          <p class="home-exp-role" data-i18n="home_quote2_role">Jefa de Proyectos Educativos</p>
+        </article>
+
+        <!-- Slide 3 (Amarillo/Gold) -->
+        <article class="home-exp-slide amarillo">
+          <p class="home-exp-quote" data-i18n="home_quote3_text">“Acreditarme con SIELE me ha abierto nuevas oportunidades profesionales en otras regiones del mundo.”</p>
+          <p class="home-exp-author" data-i18n="home_quote3_author">Mathew Hodges, Reino Unido</p>
+          <p class="home-exp-role" data-i18n="home_quote3_role">Jefe de Proyectos Educativos</p>
+        </article>
+
+        <!-- Slide 4 (Rojo/Deep Red) -->
+        <article class="home-exp-slide rojo">
+          <p class="home-exp-quote" data-i18n="home_quote4_text">“En el momento en el que pensé en una acreditación de español, pensé en el Instituto Cervantes por ser una institución reconocida mundialmente.”</p>
+          <p class="home-exp-author" data-i18n="home_quote4_author">Gaspar Argüello, Brasil</p>
+          <p class="home-exp-role" data-i18n="home_quote4_role">Diseñador Gráfico</p>
+        </article>
+      </div>
+
+      <div class="home-exp-dots"></div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer__links">
+      <div class="container">
+        <div class="footer__btns">
+          <a href="/comprobar-certificado" class="btn" id="btn-certificado" data-i18n="footer_cert">Comprobar Certificado</a>
+          <a href="/ayuda" class="btn" id="btn-ayuda" data-i18n="footer_ayuda">Ayuda</a>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/SIELE.org" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6c0-.9.6-1 1-1h3V1h-4c-4 0-5 3-5 5v2H6v4h3v11h5V12h3.5l.5-4z"/></svg></a>
+          <a href="https://twitter.com/SIELE_org" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"><path d="M13.7 10.3 20.4 2.5h-1.6l-5.8 6.8-4.7-6.8H2.9l7 10.2-7 8.2h1.6l6.1-7.1 4.9 7.1h5.4l-7.2-10.6zm-2.2 2.5-.7-1L5.1 3.7h2.4l4.6 6.5.7 1 5.9 8.5h-2.4l-4.8-6.9z"/></svg></a>
+          <a href="https://www.linkedin.com/company/siele" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M2 8h4.5v14H2zM4.2 1.5a2.6 2.6 0 1 1 0 5.2 2.6 2.6 0 0 1 0-5.2zM9 8h4.3v2h.1c.6-1.1 2.1-2.3 4.3-2.3 4.6 0 5.4 3 5.4 6.9V22h-4.5v-6.6c0-1.6 0-3.6-2.2-3.6s-2.5 1.7-2.5 3.5V22H9z"/></svg></a>
+          <a href="https://www.youtube.com/channel/UCcJZoqQ7Akk5ny714iUMHnQ" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1z"/></svg></a>
+          <a href="https://www.instagram.com/siele_oficial/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-9.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__logos">
+      <div class="container">
+        <div>
+          <div class="footer__label" data-i18n="footer_dev_by">Creado y desarrollado por:</div>
+          <div class="partners">
+            <a href="https://www.cervantes.es" target="_blank" rel="noopener" class="partner partner--cervantes" aria-label="Instituto Cervantes"><img src="images/partners/cervantes.png" alt="Instituto Cervantes" /></a>
+            <a href="https://www.unam.mx/" target="_blank" rel="noopener" class="partner partner--unam" aria-label="Universidad Nacional Autónoma de México"><img src="images/partners/unam.png" alt="UNAM" /></a>
+            <a href="https://www.usal.es" target="_blank" rel="noopener" class="partner partner--salamanca" aria-label="Universidad de Salamanca"><img src="images/partners/salamanca.png" alt="Universidad de Salamanca" /></a>
+            <a href="https://www.uba.ar/" target="_blank" rel="noopener" class="partner partner--uba" aria-label="Universidad de Buenos Aires"><img src="images/partners/uba.png" alt="Universidad de Buenos Aires" /></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__label" data-i18n="footer_managed_by">Gestionado por:</div>
+          <a href="https://www.telefonicaeducaciondigital.com/" target="_blank" rel="noopener" class="partner partner--telefonica" aria-label="Telefónica Educación Digital">
+            <img src="images/partners/telefonica.png" alt="Telefónica" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="subfooter">
+      <a href="/ayuda" data-i18n="subfooter_0">Aviso legal</a> | <a href="/ayuda" data-i18n="subfooter_1">Política de privacidad</a> | <a href="#" id="cookie-config" data-i18n="subfooter_2">Configuración de cookies</a> | <a href="/ayuda" data-i18n="subfooter_3">Términos y Condiciones de Contratación</a>
+    </div>
+  </footer>
+
+  <!-- Cookies -->
+  <button class="cookie-fab" id="cookie-fab" aria-label="Configuración de cookies">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M21 12a9 9 0 1 1-9-9 3 3 0 0 0 3 3 3 3 0 0 0 3 3z"/><circle cx="8.5" cy="10" r="1.2"/><circle cx="9" cy="15.5" r="1.2"/><circle cx="14.5" cy="15" r="1.2"/></svg>
+  </button>
+  <div class="cookie-bar" id="cookie-bar" role="dialog" aria-label="Aviso de cookies">
+    <span id="cookie-text" data-i18n-html="cookie_text">Utilizamos cookies propias y de terceros para mejorar la calidad de nuestros servicios mediante el análisis de sus hábitos de navegación. Si continúa navegando, consideramos que acepta su uso. Puede cambiar la configuración u obtener más información <a href="#">aquí</a>.</span>
+    <button class="cookie-bar__close" id="cookie-close" aria-label="Cerrar">✕</button>
+  </div>
+
+  <!-- ================= MODAL: RESERVA TU EXAMEN ================= -->
+  <div class="modal-backdrop" id="modal-booking">
+    <div class="modal-card" role="dialog" aria-labelledby="modal-booking-title">
+      <button class="modal-close" id="modal-booking-close" aria-label="Cerrar">&times;</button>
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-booking-title" data-i18n="modal_reserva_title">Reserva tu Examen SIELE</h3>
+        <p class="modal-subtitle" data-i18n="modal_reserva_subtitle">Complete el formulario para solicitar fecha en su centro examinador más cercano.</p>
+      </div>
+
+      <div id="booking-alert" class="booking-alert"></div>
+
+      <form id="booking-form" class="booking-form">
+        <div class="booking-field">
+          <label for="book-name" data-i18n="modal_reserva_name">Nombre completo:</label>
+          <input type="text" id="book-name" required placeholder="Alejandro Morales" />
+        </div>
+        <div class="booking-field">
+          <label for="book-email" data-i18n="modal_reserva_email">Correo electrónico:</label>
+          <input type="email" id="book-email" required placeholder="candidato@email.com" />
+        </div>
+        <div class="booking-field">
+          <label for="book-phone" data-i18n="modal_reserva_phone">Teléfono:</label>
+          <input type="tel" id="book-phone" placeholder="+34 600 000 000" />
+        </div>
+        <div class="booking-field">
+          <label for="book-modality" data-i18n="modal_reserva_modality">Modalidad de examen:</label>
+          <select id="book-modality" required>
+            <option value="SIELE Global" data-i18n="modal_opt_global">SIELE Global (4 pruebas: CL + CA + EIE + EIO)</option>
+            <option value="S1" data-i18n="modal_opt_s1">S1 (Comprensión de Lectura + Auditiva)</option>
+            <option value="S2" data-i18n="modal_opt_s2">S2 (Comprensión de Lectura + Expresión Escrita)</option>
+            <option value="S3" data-i18n="modal_opt_s3">S3 (Comprensión Auditiva + Expresión Oral)</option>
+            <option value="S4" data-i18n="modal_opt_s4">S4 (Expresión e Interacción Orales)</option>
+            <option value="S5" data-i18n="modal_opt_s5">S5 (Expresión Escrita + Expresión Oral)</option>
+          </select>
+        </div>
+        <div class="booking-field booking-field--full">
+          <label for="book-date" data-i18n="modal_reserva_date">Fecha preferida:</label>
+          <input type="date" id="book-date" required />
+        </div>
+        <button type="submit" id="book-submit-btn" class="booking-submit-btn" data-i18n="modal_reserva_submit">Confirmar Reserva</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/translations.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

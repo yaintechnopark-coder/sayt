@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="examenes_page_title">Exámenes SIELE: Modalidades y Pruebas</title>
+  <meta name="description" content="Conoce los exámenes SIELE, sus modalidades y las pruebas para certificar tu nivel de español de forma presencial o remota." data-i18n-attr="content:examenes_meta_desc" />
+  <link rel="icon" type="image/png" href="images/partners/favicon.png" />
+  <link rel="apple-touch-icon" href="images/partners/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__left">
+          <a href="/" class="logo" aria-label="SIELE Inicio">
+            <img src="images/partners/siele_logo.png" alt="SIELE - Servicio Internacional de Evaluación de la Lengua Española" class="logo__img" />
+          </a>
+          <nav class="lang" aria-label="Idioma">
+            <a href="#" class="active" data-lang="es" id="lang-es">ES</a>
+            <a href="#" data-lang="pt" id="lang-pt">PT</a>
+            <a href="#" data-lang="en" id="lang-en">EN</a>
+            <a href="#" data-lang="fr" id="lang-fr">FR</a>
+          </nav>
+        </div>
+        <div class="header__actions">
+          <a href="#" class="btn btn--solid btn-reserva" id="btn-reserva" data-i18n="header_reserva">Reserva tu examen</a>
+          <a href="/login" class="btn" id="btn-acceder" data-i18n="header_acceder">Acceder</a>
+          <button class="burger" id="burger" aria-label="Menú"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <div class="nav__item">
+          <span class="nav__link" data-i18n="nav_0_title">¿Por qué SIELE?</span>
+          <div class="dropdown">
+            <a href="/conoce-siele" data-i18n="nav_0_0">Conoce SIELE</a>
+            <a href="/conoce-siele#reconocimiento" data-i18n="nav_0_1">Reconocimiento</a>
+            <a href="/#universidades" data-i18n="nav_0_2">Instituciones asociadas</a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <span class="nav__link" data-i18n="nav_1_title">Examínate</span>
+          <div class="dropdown">
+            <a href="/examenes" data-i18n="nav_1_0">Modalidades</a>
+            <a href="#pruebas" data-i18n="nav_1_1">En el centro</a>
+            <a href="/encuentra-centro" data-i18n="nav_1_2">Encuentra tu centro</a>
+            <a href="/prepare-siele" data-i18n="nav_1_3">Curso de preparación</a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <span class="nav__link" data-i18n="nav_2_title">Centros de examen</span>
+          <div class="dropdown">
+            <a href="/ayuda#ser-centro" data-i18n="nav_2_0">¿Quieres ser centro SIELE?</a>
+            <a href="/login" data-i18n="nav_2_1">Gestiona tu centro</a>
+            <a href="/prepare-siele" data-i18n="nav_2_2">Conviértete en preparador</a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <span class="nav__link" data-i18n="nav_3_title">Organizaciones</span>
+          <div class="dropdown">
+            <a href="/conoce-siele#fortalezas" data-i18n="nav_3_0">Ventajas</a>
+            <a href="/conoce-siele" data-i18n="nav_3_1">Blog</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= PAGE HERO ================= -->
+    <section class="page-hero page-hero--examenes">
+      <div class="page-hero__overlay"></div>
+      <div class="container">
+        <div class="page-hero__content">
+          <h1 class="page-hero__title" data-i18n="examenes_hero_title">CERTIFICA TU ESPAÑOL DE LA MANERA MÁS COMPLETA Y CÓMODA</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INTRO & MODALITIES ================= -->
+    <section class="exam-section">
+      <div class="container">
+        <div class="exam-intro">
+          <h2 data-i18n="examenes_intro_title">Exámenes SIELE</h2>
+          <p data-i18n="examenes_intro_sub">SIELE pone a tu disposición hasta seis tipos de exámenes para adaptarse a tus necesidades de certificación con una validez de cinco años.</p>
+        </div>
+
+        <div class="exam-grid-2col">
+          <!-- Col 1: SIELE Global -->
+          <div class="exam-card">
+            <h3 data-i18n="examenes_global_title">SIELE GLOBAL</h3>
+            <p data-i18n="examenes_global_desc">Es el examen más completo para certificar tu dominio del español. Un único examen multinivel (0 a 1000 puntos) que acredita tu nivel de A1 a C1 en las cuatro pruebas.</p>
+            <div class="exam-skills-badges">
+              <span class="exam-badge cl" data-i18n="exam_badge_cl">Comprensión de Lectura (CL)</span>
+              <span class="exam-badge ca" data-i18n="exam_badge_ca">Comprensión Auditiva (CA)</span>
+              <span class="exam-badge eie" data-i18n="exam_badge_eie">Expresión Escrita (EIE)</span>
+              <span class="exam-badge eio" data-i18n="exam_badge_eio">Expresión Oral (EIO)</span>
+            </div>
+          </div>
+
+          <!-- Col 2: Modalidades Independientes -->
+          <div class="exam-card">
+            <h3 data-i18n="examenes_indep_title">MODALIDADES INDEPENDIENTES</h3>
+            <p data-i18n="examenes_indep_desc">Cinco modalidades de examen basadas en la combinación de distintas pruebas para adaptarse a tus necesidades específicas.</p>
+            <div class="indep-list">
+              <div class="indep-item" data-modality="S1" style="cursor:pointer;">
+                <span class="indep-code">S1</span>
+                <span class="indep-desc" data-i18n="exam_s1_desc">Comprensión de Lectura + Comprensión Auditiva</span>
+              </div>
+              <div class="indep-item" data-modality="S2" style="cursor:pointer;">
+                <span class="indep-code">S2</span>
+                <span class="indep-desc" data-i18n="exam_s2_desc">Comprensión de Lectura + Expresión Escrita</span>
+              </div>
+              <div class="indep-item" data-modality="S3" style="cursor:pointer;">
+                <span class="indep-code">S3</span>
+                <span class="indep-desc" data-i18n="exam_s3_desc">Comprensión Auditiva + Expresión Oral</span>
+              </div>
+              <div class="indep-item" data-modality="S4" style="cursor:pointer;">
+                <span class="indep-code">S4</span>
+                <span class="indep-desc" data-i18n="exam_s4_desc">Expresión e Interacción Orales</span>
+              </div>
+              <div class="indep-item" data-modality="S5" style="cursor:pointer;">
+                <span class="indep-code">S5</span>
+                <span class="indep-desc" data-i18n="exam_s5_desc">Expresión Escrita + Expresión Oral</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exam-actions-row">
+          <a href="#" class="btn btn--solid btn-reserva" data-i18n="header_reserva">RESERVA TU EXAMEN</a>
+          <a href="/prepare-siele" class="btn" data-i18n="examenes_btn_demo">REALIZAR DEMO DEL EXAMEN</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4 PRUEBAS DEEP DIVE ================= -->
+    <section class="pruebas-section" id="pruebas">
+      <div class="container">
+        <div class="exam-intro">
+          <h2 data-i18n="examenes_pruebas_title">Las pruebas de SIELE</h2>
+          <p data-i18n="examenes_pruebas_sub">Los exámenes SIELE se componen de hasta cuatro pruebas específicas que abarcan todos los ámbitos del español.</p>
+        </div>
+
+        <div class="pruebas-grid">
+          <!-- CL -->
+          <div class="prueba-card">
+            <div class="prueba-header cl" data-i18n="examenes_cl_title">Prueba Comprensión de Lectura</div>
+            <div class="prueba-body">
+              <div class="prueba-meta">
+                <div class="prueba-meta-item">
+                  <span class="prueba-meta-label" data-i18n="exam_meta_tasks">Tareas</span>
+                  <span class="prueba-meta-val" data-i18n="exam_val_5tasks">5 tareas</span>
+                </div>
+                <div class="prueba-meta-item">
+                  <span class="prueba-meta-label" data-i18n="exam_meta_time">Tiempo</span>
+                  <span class="prueba-meta-val">60 min</span>
+                </div>
+                <div class="prueba-meta-item">
+                  <span class="prueba-meta-label" data-i18n="exam_meta_points">Puntos máx.</span>
+                  <span class="prueba-meta-val">250 pts</span>
+                </div>
+              </div>
+              <p class="prueba-desc" data-i18n="examenes_cl_detail">5 tareas · 38 preguntas · 60 minutos · 250 ptos máx. · Calificación automática e inmediata.</p>
+            </div>
+          </div>
+
+          <!-- CA -->
+          <div class="prueba-card">
+            <div class="prueba-header ca" data-i18n="examenes_ca_title">Prueba Comprensión Auditiva</div>
+            <div class="prueba-body">
+              <div class="prueba-meta">
+                <div class="prueba-meta-item">
+                  <span class="prueba-meta-label" data-i18n="exam_meta_tasks">Tareas</span>
+                  <span class="prueba-meta-val" data-i18n="exam_val_6tasks">6 tareas</span>
+                </div>
+                <div class="prueba-meta-item">
+                  <span class="prueba-meta-label" data-i18n="exam_meta_time">Tiempo</span>
+                  <span class="prueba-meta-val">55 min</span>
+                </div>
+                <div class="prueba-meta-item">
+                  <span class="prueba-meta-label" data-i18n="exam_meta_points">Puntos máx.</span>
+                  <span class="prueba-meta-val">250 pts</span>
+                </div>
+              </div>
+              <p class="prueba-desc" data-i18n="examenes_ca_detail">6 tareas · 38 preguntas · 55 minutos · 250 ptos máx. · Calificación automática e inmediata.</p>
+            </div>
+          </div>
+
+          <!-- EIE -->
+          <div class="prueba-card">
+            <div class="prueba-header eie" data-i18n="examenes_eie_title">Prueba Expresión e Interacción Escritas</div>
+            <div class="prueba-body">
+              <div class="prueba-meta">
+                <div class="prueba-meta-item">
+                  <span class="prueba-meta-label" data-i18n="exam_meta_tasks">Tareas</span>
+                  <span class="prueba-meta-val" data-i18n="exam_val_2tasks">2 tareas</span>
+                </div>
+                <div class="prueba-meta-item">
+                  <span class="prueba-meta-label" data-i18n="exam_meta_time">Tiempo</span>
+                  <span class="prueba-meta-val">50 min</span>
+                </div>
+                <div class="prueba-meta-item">
+                  <span class="prueba-meta-label" data-i18n="exam_meta_points">Puntos máx.</span>
+                  <span class="prueba-meta-val">250 pts</span>
+                </div>
+              </div>
+              <p class="prueba-desc" data-i18n="examenes_eie_detail">2 tareas de redacción · 50 minutos · 250 ptos máx. · Calificación manual por expertos lingüistas.</p>
+            </div>
+          </div>
+
+          <!-- EIO -->
+          <div class="prueba-card">
+            <div class="prueba-header eio" data-i18n="examenes_eio_title">Prueba Expresión e Interacción Orales</div>
+            <div class="prueba-body">
+              <div class="prueba-meta">
+                <div class="prueba-meta-item">
+                  <span class="prueba-meta-label" data-i18n="exam_meta_tasks">Tareas</span>
+                  <span class="prueba-meta-val" data-i18n="exam_val_5tasks">5 tareas</span>
+                </div>
+                <div class="prueba-meta-item">
+                  <span class="prueba-meta-label" data-i18n="exam_meta_time">Tiempo</span>
+                  <span class="prueba-meta-val">15 min</span>
+                </div>
+                <div class="prueba-meta-item">
+                  <span class="prueba-meta-label" data-i18n="exam_meta_points">Puntos máx.</span>
+                  <span class="prueba-meta-val">250 pts</span>
+                </div>
+              </div>
+              <p class="prueba-desc" data-i18n="examenes_eio_detail">5 tareas de locución y grabación · 15 minutos · 250 ptos máx. · Calificación manual por expertos lingüistas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CEFR SCALING TABLES ================= -->
+    <section class="scale-section">
+      <div class="container">
+        <h3 class="scale-title" data-i18n="examenes_scale_title">CORRELACIÓN CON EL MARCO COMÚN EUROPEO (MCER)</h3>
+
+        <div class="siele-tables">
+          <!-- CL Table -->
+          <table class="siele-table reading">
+            <thead>
+              <tr class="title"><th colspan="2" data-i18n="exam_tbl_cl">Comprensión de lectura</th></tr>
+              <tr class="header"><th data-i18n="exam_tbl_level">Nivel MCER</th><th data-i18n="exam_tbl_score">Puntuación</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>C1</td><td>217 - 250</td></tr>
+              <tr><td>B2</td><td>178 - 216</td></tr>
+              <tr><td>B1</td><td>118 - 177</td></tr>
+              <tr><td>A2</td><td>66 - 117</td></tr>
+              <tr><td>A1</td><td>33 - 65</td></tr>
+              <tr><td data-i18n="exam_tbl_below_a1">Inferior a A1</td><td>0 - 32</td></tr>
+            </tbody>
+          </table>
+
+          <!-- CA Table -->
+          <table class="siele-table listening">
+            <thead>
+              <tr class="title"><th colspan="2" data-i18n="exam_tbl_ca">Comprensión auditiva</th></tr>
+              <tr class="header"><th data-i18n="exam_tbl_level">Nivel MCER</th><th data-i18n="exam_tbl_score">Puntuación</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>C1</td><td>211 - 250</td></tr>
+              <tr><td>B2</td><td>164 - 210</td></tr>
+              <tr><td>B1</td><td>112 - 163</td></tr>
+              <tr><td>A2</td><td>66 - 111</td></tr>
+              <tr><td>A1</td><td>33 - 65</td></tr>
+              <tr><td data-i18n="exam_tbl_below_a1">Inferior a A1</td><td>0 - 32</td></tr>
+            </tbody>
+          </table>
+
+          <!-- EIE Table -->
+          <table class="siele-table writing">
+            <thead>
+              <tr class="title"><th colspan="2" data-i18n="exam_tbl_eie">Expresión escrita</th></tr>
+              <tr class="header"><th data-i18n="exam_tbl_level">Nivel MCER</th><th data-i18n="exam_tbl_score">Puntuación</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>C1</td><td>215 - 250</td></tr>
+              <tr><td>B2</td><td>167 - 214</td></tr>
+              <tr><td>B1</td><td>104 - 166</td></tr>
+              <tr><td>A2</td><td>69 - 103</td></tr>
+              <tr><td>A1</td><td>34 - 68</td></tr>
+              <tr><td data-i18n="exam_tbl_below_a1">Inferior a A1</td><td>0 - 33</td></tr>
+            </tbody>
+          </table>
+
+          <!-- EIO Table -->
+          <table class="siele-table speaking">
+            <thead>
+              <tr class="title"><th colspan="2" data-i18n="exam_tbl_eio">Expresión oral</th></tr>
+              <tr class="header"><th data-i18n="exam_tbl_level">Nivel MCER</th><th data-i18n="exam_tbl_score">Puntuación</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>C1</td><td>215 - 250</td></tr>
+              <tr><td>B2</td><td>176 - 214</td></tr>
+              <tr><td>B1</td><td>125 - 175</td></tr>
+              <tr><td>A2</td><td>76 - 124</td></tr>
+              <tr><td>A1</td><td>40 - 75</td></tr>
+              <tr><td data-i18n="exam_tbl_below_a1">Inferior a A1</td><td>0 - 39</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer__links">
+      <div class="container">
+        <div class="footer__btns">
+          <a href="/comprobar-certificado" class="btn" id="btn-certificado" data-i18n="footer_cert">Comprobar Certificado</a>
+          <a href="/ayuda" class="btn" id="btn-ayuda" data-i18n="footer_ayuda">Ayuda</a>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/SIELE.org" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6c0-.9.6-1 1-1h3V1h-4c-4 0-5 3-5 5v2H6v4h3v11h5V12h3.5l.5-4z"/></svg></a>
+          <a href="https://twitter.com/SIELE_org" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"><path d="M13.7 10.3 20.4 2.5h-1.6l-5.8 6.8-4.7-6.8H2.9l7 10.2-7 8.2h1.6l6.1-7.1 4.9 7.1h5.4l-7.2-10.6zm-2.2 2.5-.7-1L5.1 3.7h2.4l4.6 6.5.7 1 5.9 8.5h-2.4l-4.8-6.9z"/></svg></a>
+          <a href="https://www.linkedin.com/company/siele" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M2 8h4.5v14H2zM4.2 1.5a2.6 2.6 0 1 1 0 5.2 2.6 2.6 0 0 1 0-5.2zM9 8h4.3v2h.1c.6-1.1 2.1-2.3 4.3-2.3 4.6 0 5.4 3 5.4 6.9V22h-4.5v-6.6c0-1.6 0-3.6-2.2-3.6s-2.5 1.7-2.5 3.5V22H9z"/></svg></a>
+          <a href="https://www.youtube.com/channel/UCcJZoqQ7Akk5ny714iUMHnQ" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1z"/></svg></a>
+          <a href="https://www.instagram.com/siele_oficial/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-9.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__logos">
+      <div class="container">
+        <div>
+          <div class="footer__label" data-i18n="footer_dev_by">Creado y desarrollado por:</div>
+          <div class="partners">
+            <a href="https://www.cervantes.es" target="_blank" rel="noopener" class="partner partner--cervantes" aria-label="Instituto Cervantes"><img src="images/partners/cervantes.png" alt="Instituto Cervantes" /></a>
+            <a href="https://www.unam.mx/" target="_blank" rel="noopener" class="partner partner--unam" aria-label="Universidad Nacional Autónoma de México"><img src="images/partners/unam.png" alt="UNAM" /></a>
+            <a href="https://www.usal.es" target="_blank" rel="noopener" class="partner partner--salamanca" aria-label="Universidad de Salamanca"><img src="images/partners/salamanca.png" alt="Universidad de Salamanca" /></a>
+            <a href="https://www.uba.ar/" target="_blank" rel="noopener" class="partner partner--uba" aria-label="Universidad de Buenos Aires"><img src="images/partners/uba.png" alt="Universidad de Buenos Aires" /></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__label" data-i18n="footer_managed_by">Gestionado por:</div>
+          <a href="https://www.telefonicaeducaciondigital.com/" target="_blank" rel="noopener" class="partner partner--telefonica" aria-label="Telefónica Educación Digital">
+            <img src="images/partners/telefonica.png" alt="Telefónica" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="subfooter">
+      <a href="/ayuda" data-i18n="subfooter_0">Aviso legal</a> | <a href="/ayuda" data-i18n="subfooter_1">Política de privacidad</a> | <a href="#" id="cookie-config" data-i18n="subfooter_2">Configuración de cookies</a> | <a href="/ayuda" data-i18n="subfooter_3">Términos y Condiciones de Contratación</a>
+    </div>
+  </footer>
+
+  <!-- Cookies -->
+  <button class="cookie-fab" id="cookie-fab" aria-label="Configuración de cookies">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M21 12a9 9 0 1 1-9-9 3 3 0 0 0 3 3 3 3 0 0 0 3 3 3 3 0 0 0 3 3z"/><circle cx="8.5" cy="10" r="1.2"/><circle cx="9" cy="15.5" r="1.2"/><circle cx="14.5" cy="15" r="1.2"/></svg>
+  </button>
+  <div class="cookie-bar" id="cookie-bar" role="dialog" aria-label="Aviso de cookies">
+    <span id="cookie-text" data-i18n-html="cookie_text">Utilizamos cookies propias y de terceros para mejorar la calidad de nuestros servicios mediante el análisis de sus hábitos de navegación. Si continúa navegando, consideramos que acepta su uso. Puede cambiar la configuración u obtener más información <a href="#">aquí</a>.</span>
+    <button class="cookie-bar__close" id="cookie-close" aria-label="Cerrar">✕</button>
+  </div>
+
+  <!-- ================= MODAL: RESERVA TU EXAMEN ================= -->
+  <div class="modal-backdrop" id="modal-booking">
+    <div class="modal-card" role="dialog" aria-labelledby="modal-booking-title">
+      <button class="modal-close" id="modal-booking-close" aria-label="Cerrar">&times;</button>
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-booking-title" data-i18n="modal_reserva_title">Reserva tu Examen SIELE</h3>
+        <p class="modal-subtitle" data-i18n="modal_reserva_subtitle">Complete el formulario para solicitar fecha en su centro examinador más cercano.</p>
+      </div>
+
+      <div id="booking-alert" class="booking-alert"></div>
+
+      <form id="booking-form" class="booking-form">
+        <div class="booking-field">
+          <label for="book-name" data-i18n="modal_reserva_name">Nombre completo:</label>
+          <input type="text" id="book-name" required placeholder="Alejandro Morales" />
+        </div>
+        <div class="booking-field">
+          <label for="book-email" data-i18n="modal_reserva_email">Correo electrónico:</label>
+          <input type="email" id="book-email" required placeholder="candidato@email.com" />
+        </div>
+        <div class="booking-field">
+          <label for="book-phone" data-i18n="modal_reserva_phone">Teléfono:</label>
+          <input type="tel" id="book-phone" placeholder="+34 600 000 000" />
+        </div>
+        <div class="booking-field">
+          <label for="book-modality" data-i18n="modal_reserva_modality">Modalidad de examen:</label>
+          <select id="book-modality" required>
+            <option value="SIELE Global" data-i18n="modal_opt_global">SIELE Global (4 pruebas: CL + CA + EIE + EIO)</option>
+            <option value="S1" data-i18n="modal_opt_s1">S1 (Comprensión de Lectura + Auditiva)</option>
+            <option value="S2" data-i18n="modal_opt_s2">S2 (Comprensión de Lectura + Expresión Escrita)</option>
+            <option value="S3" data-i18n="modal_opt_s3">S3 (Comprensión Auditiva + Expresión Oral)</option>
+            <option value="S4" data-i18n="modal_opt_s4">S4 (Expresión e Interacción Orales)</option>
+            <option value="S5" data-i18n="modal_opt_s5">S5 (Expresión Escrita + Expresión Oral)</option>
+          </select>
+        </div>
+        <div class="booking-field booking-field--full">
+          <label for="book-date" data-i18n="modal_reserva_date">Fecha preferida:</label>
+          <input type="date" id="book-date" required />
+        </div>
+        <button type="submit" id="book-submit-btn" class="booking-submit-btn" data-i18n="modal_reserva_submit">Confirmar Reserva</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/translations.js"></script>
+  <script src="js/page-common.js"></script>
+</body>
+</html>

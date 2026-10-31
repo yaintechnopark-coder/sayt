@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Certificado Oficial SIELE</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+    body {
+      background: #fff;
+      color: #222;
+      padding: 35px 40px;
+      position: relative;
+    }
+    .cert-container {
+      border: 3px double #b31b2c;
+      padding: 30px;
+      position: relative;
+      background: #fafafa;
+    }
+    .cert-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #b31b2c;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+    .cert-logo {
+      font-size: 32px;
+      font-weight: 900;
+      color: #b31b2c;
+      letter-spacing: -1px;
+    }
+    .cert-logo span {
+      display: block;
+      font-size: 9px;
+      font-weight: 400;
+      color: #555;
+      letter-spacing: 0.5px;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+    .cert-seal {
+      text-align: right;
+      font-size: 11px;
+      color: #666;
+    }
+    .cert-seal b {
+      font-size: 13px;
+      color: #b31b2c;
+      display: block;
+    }
+    .cert-title-block {
+      text-align: center;
+      margin: 25px 0 20px;
+    }
+    .cert-title-block h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1b3d4f;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .cert-title-block p {
+      font-size: 13px;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .candidate-box {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 18px 24px;
+      margin-bottom: 22px;
+    }
+    .candidate-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 24px;
+      font-size: 13px;
+    }
+    .candidate-item label {
+      display: block;
+      font-size: 10px;
+      color: #777;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+    .candidate-item span {
+      font-weight: 700;
+      color: #222;
+      font-size: 14px;
+    }
+    .level-banner {
+      background: linear-gradient(135deg, #1b3d4f, #2a5f78);
+      color: #fff;
+      padding: 16px 24px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 22px;
+    }
+    .level-info span {
+      font-size: 11px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+    .level-info h2 {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .level-badge {
+      font-size: 34px;
+      font-weight: 900;
+      background: #fff;
+      color: #1b3d4f;
+      padding: 2px 20px;
+      border-radius: 6px;
+    }
+    .scores-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 25px;
+      background: #fff;
+      border: 1px solid #ddd;
+    }
+    .scores-table th {
+      background: #f0f0f0;
+      color: #333;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 10px 14px;
+      text-align: left;
+      border-bottom: 2px solid #ddd;
+    }
+    .scores-table td {
+      padding: 12px 14px;
+      font-size: 13px;
+      border-bottom: 1px solid #eee;
+    }
+    .scores-table td.score-num {
+      font-family: monospace;
+      font-weight: 700;
+      color: #1b3d4f;
+      text-align: center;
+    }
+    .scores-table td.level-tag {
+      text-align: center;
+      font-weight: 700;
+    }
+    .scores-table td.level-tag span {
+      display: inline-block;
+      padding: 3px 10px;
+      background: #1b3d4f;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 11px;
+    }
+    .footer-signatures {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px dashed #ccc;
+    }
+    .signature-item {
+      text-align: center;
+      font-size: 11px;
+      color: #555;
+    }
+    .signature-line {
+      width: 180px;
+      height: 40px;
+      border-bottom: 1px solid #444;
+      margin: 0 auto 6px;
+      font-style: italic;
+      font-size: 16px;
+      color: #1b3d4f;
+      line-height: 50px;
+      font-family: 'Times New Roman', serif;
+    }
+    .partner-logos {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+      padding-top: 12px;
+      border-top: 1px solid #eee;
+      font-size: 9px;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="cert-container">
+    <div class="cert-header">
+      <div class="cert-logo">
+        siele
+        <span>Servicio Internacional de Evaluación de la Lengua Española</span>
+      </div>
+      <div class="cert-seal">
+        <b>DOCUMENTO OFICIAL VERIFICADO</b>
+        Código seguro de verificación: <strong>K9mXvR7pQ2wLz8nJ4bY6cA==</strong>
+      </div>
+    </div>
+
+    <div class="cert-title-block">
+      <h1>Certificado Oficial de Competencia Lingüística</h1>
+      <p>Marco Común Europeo de Referencia para las Lenguas (MCER)</p>
+    </div>
+
+    <div class="candidate-box">
+      <div class="candidate-grid">
+        <div class="candidate-item">
+          <label>Candidato / Candidate</label>
+          <span>Alejandro García López</span>
+        </div>
+        <div class="candidate-item">
+          <label>Documento de Identidad</label>
+          <span>48912304X</span>
+        </div>
+        <div class="candidate-item">
+          <label>Modalidad de Examen</label>
+          <span>SIELE Global</span>
+        </div>
+        <div class="candidate-item">
+          <label>Fecha de Examen</label>
+          <span>15 de marzo de 2024</span>
+        </div>
+        <div class="candidate-item">
+          <label>Centro Examinador Autorizado</label>
+          <span>Instituto Cervantes de Madrid (España)</span>
+        </div>
+        <div class="candidate-item">
+          <label>Validez Oficial</label>
+          <span>5 años (Válido hasta el 15/03/2029)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="level-banner">
+      <div class="level-info">
+        <span>Nivel Global Acreditado (MCER)</span>
+        <h2>Puntuación Total: 895 / 1000</h2>
+      </div>
+      <div class="level-badge">C1</div>
+    </div>
+
+    <table class="scores-table">
+      <thead>
+        <tr>
+          <th>Prueba / Skill</th>
+          <th style="text-align:center;">Puntuación</th>
+          <th style="text-align:center;">Nivel Obtenido</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Comprensión de Lectura (CL)</strong></td>
+          <td class="score-num">230 / 250</td>
+          <td class="level-tag"><span>C1</span></td>
+        </tr>
+        <tr>
+          <td><strong>Comprensión Auditiva (CA)</strong></td>
+          <td class="score-num">225 / 250</td>
+          <td class="level-tag"><span>C1</span></td>
+        </tr>
+        <tr>
+          <td><strong>Expresión e Interacción Escritas (EIE)</strong></td>
+          <td class="score-num">215 / 250</td>
+          <td class="level-tag"><span>B2</span></td>
+        </tr>
+        <tr>
+          <td><strong>Expresión e Interacción Orales (EIO)</strong></td>
+          <td class="score-num">225 / 250</td>
+          <td class="level-tag"><span>C1</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="footer-signatures">
+      <div class="signature-item">
+        <div class="signature-line">Dir. Académica</div>
+        <span>Dirección Académica SIELE</span>
+      </div>
+      <div class="signature-item">
+        <div style="font-family: monospace; font-size: 11px; padding: 6px; border: 1px solid #999; background: #fff; margin-bottom: 4px;">
+          ||||| | |||| ||| ||||||| ||| |||||
+        </div>
+        <span>Código QR de Verificación</span>
+      </div>
+      <div class="signature-item">
+        <div class="signature-line">Sec. General</div>
+        <span>Secretaría de Certificación</span>
+      </div>
+    </div>
+
+    <div class="partner-logos">
+      <span>Instituto Cervantes</span>
+      <span>Universidad Nacional Autónoma de México</span>
+      <span>Universidad de Salamanca</span>
+      <span>Universidad de Buenos Aires</span>
+    </div>
+  </div>
+</body>
+</html>

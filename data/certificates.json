@@ -1,0 +1,48 @@
+[
+  {
+    "token": "K9mXvR7pQ2wLz8nJ4bY6cA==",
+    "code": "K9mXvR7pQ2wLz8nJ4bY6cA==",
+    "pdfFile": "SIELE_Certificado_Abduvohid.pdf",
+    "pdfFileEn": "SIELE_Certificado_Abduvohid_EN.pdf",
+    "candidateName": "Toshbekov, Abduvohid",
+    "documentId": "AD2000451",
+    "modality": "SIELE Global",
+    "modalityCode": "GLOBAL",
+    "examDate": "2026-07-28",
+    "validUntil": "2031-07-28",
+    "examCenter": "Asliddin School (Qarshi, Uzbekistán)",
+    "globalLevel": "B2",
+    "totalScore": 915,
+    "maxScore": 1000,
+    "status": "VALID",
+    "scores": {
+      "cl": { "name": "Comprensión de lectura", "score": 240, "max": 250, "level": "C1" },
+      "ca": { "name": "Comprensión auditiva", "score": 215, "max": 250, "level": "B2" },
+      "eie": { "name": "Expresión e interacción escritas", "score": 235, "max": 250, "level": "C1" },
+      "eio": { "name": "Expresión e interacción orales", "score": 225, "max": 250, "level": "C1" }
+    }
+  },
+  {
+    "token": "TC5yiNIEszhWBiNEt4D5tw==",
+    "code": "TC5yiNIEszhWBiNEt4D5tw==",
+    "pdfFile": "SIELE_Certificado_Oficial.pdf",
+    "pdfFileEn": "SIELE_Certificado_Oficial_EN.pdf",
+    "candidateName": "Tojiddinova, Sayyoraxon",
+    "documentId": "AE1794960",
+    "modality": "SIELE Global",
+    "modalityCode": "GLOBAL",
+    "examDate": "2026-07-28",
+    "validUntil": "2031-07-28",
+    "examCenter": "Asliddin School (Qarshi, Uzbekistán)",
+    "globalLevel": "B2",
+    "totalScore": 930,
+    "maxScore": 1000,
+    "status": "VALID",
+    "scores": {
+      "cl": { "name": "Comprensión de lectura", "score": 250, "max": 250, "level": "C1" },
+      "ca": { "name": "Comprensión auditiva", "score": 204, "max": 250, "level": "B2" },
+      "eie": { "name": "Expresión e interacción escritas", "score": 249, "max": 250, "level": "C1" },
+      "eio": { "name": "Expresión e interacción orales", "score": 227, "max": 250, "level": "C1" }
+    }
+  }
+]

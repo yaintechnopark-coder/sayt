@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="mipagina_page_title">Mi página - SIELE</title>
+  <meta name="description" content="Espacio personal del candidato SIELE - Servicio Internacional de Evaluación de la Lengua Española." />
+  <link rel="icon" type="image/png" href="images/partners/favicon.png" />
+  <link rel="apple-touch-icon" href="images/partners/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body style="background: #ffffff;">
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__left">
+          <a href="/" class="logo" aria-label="SIELE Inicio">
+            <img src="images/partners/siele_logo.png" alt="SIELE - Servicio Internacional de Evaluación de la Lengua Española" class="logo__img" />
+          </a>
+          <nav class="lang" aria-label="Idioma">
+            <a href="#" class="active" data-lang="es" id="lang-es">ES</a>
+            <a href="#" data-lang="pt" id="lang-pt">PT</a>
+            <a href="#" data-lang="en" id="lang-en">EN</a>
+            <a href="#" data-lang="fr" id="lang-fr">FR</a>
+          </nav>
+        </div>
+        <div class="header__actions">
+          <a href="#" class="btn btn--solid btn-reserva" id="btn-reserva" data-i18n="header_reserva">Reserva tu examen</a>
+          <a href="/login" class="btn" id="btn-acceder" data-i18n="header_acceder">Acceder</a>
+          <button class="burger" id="burger" aria-label="Menú"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav" aria-label="Principal">
+        <div class="nav__item">
+          <span class="nav__link" data-i18n="nav_0_title">¿Por qué SIELE?</span>
+          <div class="dropdown">
+            <a href="/conoce-siele" data-i18n="nav_0_0">Conoce SIELE</a>
+            <a href="/conoce-siele#reconocimiento" data-i18n="nav_0_1">Reconocimiento</a>
+            <a href="/#universidades" data-i18n="nav_0_2">Instituciones asociadas</a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <span class="nav__link" data-i18n="nav_1_title">Examínate</span>
+          <div class="dropdown">
+            <a href="/examenes" data-i18n="nav_1_0">Modalidades</a>
+            <a href="/examenes#pruebas" data-i18n="nav_1_1">En el centro</a>
+            <a href="/encuentra-centro" data-i18n="nav_1_2">Encuentra tu centro</a>
+            <a href="/prepare-siele" data-i18n="nav_1_3">Curso de preparación</a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <span class="nav__link" data-i18n="nav_2_title">Centros de examen</span>
+          <div class="dropdown">
+            <a href="/ayuda#ser-centro" data-i18n="nav_2_0">¿Quieres ser centro SIELE?</a>
+            <a href="/login" data-i18n="nav_2_1">Gestiona tu centro</a>
+            <a href="/prepare-siele" data-i18n="nav_2_2">Conviértete en preparador</a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <span class="nav__link" data-i18n="nav_3_title">Organizaciones</span>
+          <div class="dropdown">
+            <a href="/conoce-siele#fortalezas" data-i18n="nav_3_0">Ventajas</a>
+            <a href="/conoce-siele" data-i18n="nav_3_1">Blog</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT (/mi-pagina) ================= -->
+  <main id="main-content" role="main">
+    <!-- Banner SU ESPACIO PERSONAL / SU ESPACIO SIELE -->
+    <div class="siele-mipagina-banner">
+      <div class="textoHome">
+        <h1 data-i18n-html="mipagina_hero_html">SU ESPACIO PERSONAL <br/> SU ESPACIO SIELE</h1>
+      </div>
+    </div>
+
+    <!-- 2-Column Layout (40% Left / 60% Right) -->
+    <div class="siele-mipagina-columns">
+
+      <!-- LEFT COLUMN (40%): Mi perfil & Acceso Directo -->
+      <div class="siele-mipagina-col-left" id="column-2">
+
+        <!-- Portlet: Mi perfil -->
+        <section class="siele-portlet-box" id="portlet_myprofile_WAR_sieleportlet">
+          <header class="portlet-topper">
+            <div class="portlet-title">
+              <span class="portlet-title-text" data-i18n="mipagina_profile_header">Mi perfil</span>
+            </div>
+          </header>
+
+          <div class="portlet-body">
+            <div class="siele-myprofile-subtitle" data-i18n="mipagina_my_data">MIS DATOS</div>
+            <div id="profile-feedback" style="display:none;"></div>
+
+            <!-- View 1: Default Profile Data -->
+            <div class="userprofile" id="profile-view-default">
+              <div class="miperfil-datos" id="nameFN">
+                <span class="label" data-i18n="mipagina_lbl_firstname">Nombre: </span>
+                <span class="label_contenido" id="disp-firstName">Sayyoraxon</span>
+              </div>
+              <div class="miperfil-datos" id="nameLN">
+                <span class="label" data-i18n="mipagina_lbl_lastname">Apellidos:</span>
+                <span class="label_contenido" id="disp-lastName">Tojiddinova</span>
+              </div>
+              <div class="miperfil-datos" id="miperfil-email">
+                <span class="label" data-i18n="mipagina_lbl_email">Email::</span>
+                <span class="label_contenido" id="disp-email">qilichbek00000@gmail.com</span>
+              </div>
+              <div class="miperfil-datos" id="miperfil-phone">
+                <span class="label" data-i18n="mipagina_lbl_phone">Teléfono:</span>
+                <span class="label_contenido" id="disp-phone">998918410105</span>
+              </div>
+              <div class="miperfil-datos" id="miperfil-birthday">
+                <span class="label" data-i18n="mipagina_lbl_birthday">Fecha de nacimiento:</span>
+                <span class="label_contenido" id="disp-birthday">30/11/1998</span>
+              </div>
+              <div class="miperfil-datos" id="miperfil-inscriptionemails">
+                <span class="label" data-i18n="mipagina_lbl_accept_info">Sí, acepto recibir información de SIELE:</span>
+                <span class="label_contenido" id="disp-inscriptionMails" data-i18n="mipagina_val_yes">Sí</span>
+              </div>
+
+              <div class="siele-profile-actions">
+                <input
+                  class="siele-outline-red-btn"
+                  id="btn-open-edit-profile"
+                  type="button"
+                  value="Editar Perfil"
+                  data-i18n-attr="value:mipagina_btn_edit_profile"
+                />
+                <input
+                  class="siele-outline-red-btn"
+                  id="btn-open-change-password"
+                  type="button"
+                  value="Cambiar contraseña"
+                  data-i18n-attr="value:mipagina_btn_change_pass"
+                />
+              </div>
+            </div>
+
+            <!-- View 2: Edit Profile Form (updateUserSiele) -->
+            <form class="siele-edit-form" id="profile-view-edit" style="display:none;">
+              <div class="aui-field">
+                <label class="aui-field-label" for="edit-firstName" data-i18n="mipagina_edit_firstname">Nombre</label>
+                <input class="aui-field-input-text" id="edit-firstName" name="firstName" type="text" value="Sayyoraxon" required />
+              </div>
+
+              <div class="aui-field">
+                <label class="aui-field-label" for="edit-lastName" data-i18n="mipagina_edit_lastname">Apellidos</label>
+                <input class="aui-field-input-text" id="edit-lastName" name="lastName" type="text" value="Tojiddinova" required />
+              </div>
+
+              <div class="aui-field">
+                <label class="aui-field-label" for="edit-email" data-i18n="mipagina_edit_email">Email:</label>
+                <input class="aui-field-input-text" id="edit-email" name="emailAddress" type="text" value="qilichbek00000@gmail.com" disabled />
+              </div>
+
+              <div class="aui-field">
+                <label class="aui-field-label" for="edit-phone">
+                  <span data-i18n="mipagina_edit_phone">Teléfono</span>
+                  <img src="images/portal/help.png" alt="Ayuda" title="Incluya número de teléfono (sin 00 y sin prefijo). Ejemplo: teléfono de España: 64755517" style="vertical-align:middle; margin-left:4px; cursor:help;" />
+                </label>
+                <input class="aui-field-input-text" id="edit-phone" name="phone" type="text" value="998918410105" />
+              </div>
+
+              <div class="aui-field">
+                <label class="aui-field-label" data-i18n="mipagina_edit_birthday">Fecha de nacimiento</label>
+                <div class="siele-bday-selects">
+                  <select id="edit-birthdayMonth" name="birthdayMonth">
+                    <option value="0">January / Enero</option>
+                    <option value="1">February / Febrero</option>
+                    <option value="2">March / Marzo</option>
+                    <option value="3">April / Abril</option>
+                    <option value="4">May / Mayo</option>
+                    <option value="5">June / Junio</option>
+                    <option value="6">July / Julio</option>
+                    <option value="7">August / Agosto</option>
+                    <option value="8">September / Septiembre</option>
+                    <option value="9">October / Octubre</option>
+                    <option value="10" selected>November / Noviembre</option>
+                    <option value="11">December / Diciembre</option>
+                  </select>
+                  <select id="edit-birthdayDay" name="birthdayDay"></select>
+                  <select id="edit-birthdayYear" name="birthdayYear"></select>
+                </div>
+              </div>
+
+              <div class="aui-field" style="display:flex; align-items:center; gap:8px; margin-top:10px;">
+                <input checked id="edit-inscriptionMails" name="inscriptionMails" type="checkbox" />
+                <label for="edit-inscriptionMails" style="font-size:13px; font-weight:700; cursor:pointer;" data-i18n="mipagina_edit_accept">
+                  Sí, acepto recibir información de SIELE
+                </label>
+              </div>
+
+              <div class="buttons">
+                <input
+                  class="siele-outline-red-btn"
+                  id="btn-cancel-edit-profile"
+                  type="button"
+                  value="Cancelar"
+                  data-i18n-attr="value:mipagina_btn_cancel"
+                />
+                <input
+                  class="siele-outline-red-btn"
+                  type="submit"
+                  value="Guardar"
+                  data-i18n-attr="value:mipagina_btn_save"
+                />
+              </div>
+            </form>
+
+            <!-- View 3: Change Password Form (updateUserPasswordSiele) -->
+            <form class="siele-edit-form" id="profile-view-password" style="display:none;">
+              <div class="aui-field">
+                <label class="aui-field-label" for="pass-current">
+                  <span data-i18n="mipagina_pass_current">Contraseña actual</span>
+                  <span style="font-weight:normal; color:#555;" data-i18n="mipagina_required">(Obligatorio)</span>
+                </label>
+                <input class="aui-field-input-text" id="pass-current" type="password" required />
+              </div>
+
+              <div class="aui-field">
+                <label class="aui-field-label" for="pass-new">
+                  <span data-i18n="mipagina_pass_new">Nueva contraseña</span>
+                  <span style="font-weight:normal; color:#555;" data-i18n="mipagina_required">(Obligatorio)</span>
+                </label>
+                <input class="aui-field-input-text" id="pass-new" type="password" required />
+              </div>
+
+              <div class="aui-field">
+                <label class="aui-field-label" for="pass-repeat">
+                  <span data-i18n="mipagina_pass_repeat">Repetir nueva contraseña</span>
+                  <span style="font-weight:normal; color:#555;" data-i18n="mipagina_required">(Obligatorio)</span>
+                </label>
+                <input class="aui-field-input-text" id="pass-repeat" type="password" required />
+              </div>
+
+              <div class="buttons">
+                <input
+                  class="siele-outline-red-btn"
+                  id="btn-cancel-change-password"
+                  type="button"
+                  value="Cancelar"
+                  data-i18n-attr="value:mipagina_btn_cancel"
+                />
+                <input
+                  class="siele-outline-red-btn"
+                  type="submit"
+                  value="Guardar"
+                  data-i18n-attr="value:mipagina_btn_save"
+                />
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- Portlet: Acceso Directo -->
+        <section class="siele-portlet-box" id="portlet_56_INSTANCE_kQO7TCIometF">
+          <header class="portlet-topper">
+            <div class="portlet-title">
+              <span class="portlet-title-text" data-i18n="mipagina_direct_access">Acceso Directo</span>
+            </div>
+          </header>
+
+          <div class="portlet-body">
+            <div class="separador_mypage">
+              <a href="https://siele.org/documents/10180/84852/SIELE_GuiaExamen_20160308_b/183c79ec-cbd8-4ea9-91a7-30f6fb2a1da3" target="_blank" rel="noopener" data-i18n="mipagina_link_guide">
+                Descargue la Guía Oficial de Examen SIELE
+              </a>
+            </div>
+            <div class="separador_mypage">
+              <a href="https://examendemo.siele.org" target="_blank" rel="noopener" data-i18n="mipagina_link_demo">
+                Realice una demo en línea del examen
+              </a>
+            </div>
+            <div class="separador_mypage mooccandidatos">
+              <a href="/prepare-siele" data-i18n="mipagina_link_mooc">
+                Acceda al MOOC de candidatos
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- RIGHT COLUMN (60%): Mis exámenes & Mis cursos -->
+      <div class="siele-mipagina-col-right" id="column-3">
+
+        <!-- Portlet: Mis exámenes -->
+        <section class="siele-portlet-box" id="portlet_mycertifications_WAR_sielemanagerportlet">
+          <header class="portlet-topper">
+            <div class="portlet-title">
+              <span class="portlet-title-text" data-i18n="mipagina_my_exams">Mis exámenes</span>
+            </div>
+          </header>
+
+          <div class="portlet-body">
+
+            <!-- View 1: Certifications List -->
+            <div id="exams-view-list">
+              <ul class="list-certifications">
+                <li>
+                  <span class="table-course-img">
+                    <a href="/api/certificates/pdf/es" id="exam-row-cert-icon-link" title="Descargar certificado PDF">
+                      <img src="images/portal/siele_global_icon.png" alt="SIELE Global" />
+                    </a>
+                  </span>
+                  <span class="nameCourse">
+                    <a href="/api/certificates/pdf/es" id="exam-row-cert-title-link" style="color:inherit; text-decoration:none;">SIELE Global</a>
+                  </span>
+                  <span class="statusCourse" data-i18n="mipagina_status_graded">Calificado</span>
+                  <span class="optionCourse">
+                    <button type="button" class="siele-actions-btn" id="exam-actions-trigger">
+                      <img src="images/portal/tool.png" alt="" />
+                      <span data-i18n="mipagina_actions">Acciones</span>
+                    </button>
+                    <ul class="siele-actions-menu" id="exam-actions-menu" style="display:none;">
+                      <li>
+                        <a href="#detalles-reserva" id="action-open-res-details">
+                          <img src="images/portal/revision.png" alt="" />
+                          <span data-i18n="mipagina_act_details">Detalles de reserva</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/api/certificates/pdf/es" id="action-view-cert-es">
+                          <img src="images/portal/view.png" alt="" />
+                          <span data-i18n="mipagina_act_cert_es">Ver certificado</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/api/certificates/pdf/en" id="action-view-cert-en">
+                          <img src="images/portal/view.png" alt="" />
+                          <span data-i18n="mipagina_act_cert_en">Ver certificado en inglés</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/profile/add?_ed=0_HtJMp8IScSj4hxAPkhaIcOPhx__k9NQlVW9kRYN2Vvwv3WERdSRzEXIw1DbKH-INaSgvthvZk7wTBMS3S-m0L6A6mLjErM6PJiwMkk6nYZylU7__75hCVwJdOTZCAkdv&amp;pfCertificationName=SIELE+Global&amp;pfCertificationUrl=https%3A%2F%2Fsiele.org%2Fcomprobar-certificado%2F&amp;pfLicenseNo=TC5yiNIEszhWBiNEt4D5tw%3D%3D&amp;trk=onsite_longurl" target="_blank" rel="noopener" id="action-share-linkedin">
+                          <img src="images/portal/linkedin.png" alt="" />
+                          <span data-i18n="mipagina_act_linkedin">Compartir en LinkedIn</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- View 2: Reservation Details (reservationdetails.jsp) -->
+            <div id="exams-view-details" style="display:none;">
+              <div class="siele-res-header">
+                <span class="header-back-to">
+                  <a href="#volver" id="btn-back-to-exams" data-i18n="res_back">&laquo; Volver</a>
+                </span>
+                <h1 class="header-title">
+                  <span data-i18n="res_title">Detalles de reserva</span>
+                </h1>
+              </div>
+
+              <!-- Información de sesión -->
+              <div class="session-info">
+                <div class="siele-res-section-title" data-i18n="res_sec_session">Información de sesión</div>
+                <div class="siele-res-row"><label data-i18n="res_session_type">Tipo de sesión</label> : <span data-i18n="res_session_type_val">Presencial</span></div>
+                <div class="siele-res-row"><label data-i18n="res_exam">Examen</label> : <span>SIELE Global</span></div>
+                <div class="siele-res-row"><label data-i18n="res_start_date">Fecha de inicio de prueba</label> : <span id="res-start-date">28-07-2026 15:02</span></div>
+                <div class="siele-res-row"><label data-i18n="res_end_date">Fecha de fin de prueba</label> : <span id="res-end-date">28-07-2026 18:32</span></div>
+                <div class="siele-res-row"><label data-i18n="res_center">Centro</label> : <span id="res-center">Asliddin School</span></div>
+                <div class="siele-res-row"><label data-i18n="res_address">Dirección (calle, n°, local)</label> : <span id="res-address">Paxtazor 28, Qarshi, Uzbekistán</span></div>
+                <div class="siele-res-row"><label data-i18n="res_room">Aula</label> : <span id="res-room">Test room 3</span></div>
+                <div class="siele-res-row"><label data-i18n="res_country">País</label> : <span id="res-country">Uzbekistán</span></div>
+                <div class="siele-res-row"><label data-i18n="res_region">Región</label> : <span id="res-region">Qashqadaryo Province</span></div>
+                <div class="siele-res-row"><label data-i18n="res_locality">Localidad</label> : <span id="res-locality">Qarshi</span></div>
+              </div>
+
+              <!-- Información de la reserva -->
+              <div class="general-info">
+                <div class="siele-res-section-title" data-i18n="res_sec_reservation">Información de la reserva</div>
+                <div class="siele-res-row"><label data-i18n="res_code">Código de reserva</label> : <span id="res-code">4723500</span></div>
+                <div class="siele-res-row"><label data-i18n="res_state">Estado</label> : <span data-i18n="res_state_val">Comprada</span></div>
+                <div class="siele-res-row"><label data-i18n="res_purchase_date">Fecha compra</label> : <span id="res-purchase-date">18-06-2026</span></div>
+                <div class="siele-res-row"><label data-i18n="res_purchase_price">Precio de compra</label> : <span>0.0€</span></div>
+                <div class="siele-res-row"><label data-i18n="res_price">Precio</label> : <span>145.0€</span></div>
+                <div class="siele-res-row"><label data-i18n="res_coupon">Código de cupón</label> : <span id="res-coupon">LYMFTZCOOM</span></div>
+                <div class="siele-res-row"><label data-i18n="res_status">Estado de la reserva</label> : <span data-i18n="res_status_val">Calificado</span></div>
+              </div>
+
+              <!-- Información del candidato -->
+              <div class="student-info">
+                <div class="siele-res-section-title" data-i18n="res_sec_candidate">Información del candidato</div>
+                <div class="siele-res-row"><label data-i18n="res_userid">Id usuario</label> : <span id="res-cand-userid">31709473</span></div>
+                <div class="siele-res-row"><label data-i18n="res_fullname">Apellidos, nombre</label> : <span id="res-cand-fullname">Tojiddinova, Sayyoraxon</span></div>
+                <div class="siele-res-row"><label data-i18n="res_email">Email:</label> : <span id="res-cand-email">qilichbek00000@gmail.com</span></div>
+                <div class="siele-res-row"><label data-i18n="res_document">Documento</label> : <span id="res-cand-document">Documento Identidad - AE1794960</span></div>
+                <div class="siele-res-row"><label data-i18n="res_phone">Teléfono de contacto</label> : <span id="res-cand-phone">998918410105</span></div>
+              </div>
+
+              <!-- Información de resultados -->
+              <div class="results-info">
+                <div class="siele-res-section-title" data-i18n="res_sec_results">Información de resultados</div>
+                <div class="siele-res-row"><label data-i18n="res_cl">Comprensión de lectura</label> : <span id="res-score-cl">250</span> <span data-i18n="res_points">Puntos</span></div>
+                <div class="siele-res-row"><label data-i18n="res_ca">Comprensión auditiva</label> : <span id="res-score-ca">204</span> <span data-i18n="res_points">Puntos</span></div>
+                <div class="siele-res-row"><label data-i18n="res_eie">Expresión e interacción escritas</label> : <span id="res-score-eie">249</span> <span data-i18n="res_points">Puntos</span></div>
+                <div class="siele-res-row"><label data-i18n="res_eio">Expresión e interacción orales</label> : <span id="res-score-eio">227</span> <span data-i18n="res_points">Puntos</span></div>
+
+                <h3 class="siele-res-total">
+                  <span data-i18n="res_total">Total</span> <span id="res-score-total">930</span> <span data-i18n="res_points">Puntos</span>
+                </h3>
+
+                <table class="siele-res-chart-table">
+                  <tbody>
+                    <tr>
+                      <td align="center" valign="top"><span id="chart-val-cl">250</span><br/><span data-i18n="res_points">Puntos</span></td>
+                      <td align="center" valign="top"><span id="chart-val-ca">204</span><br/><span data-i18n="res_points">Puntos</span></td>
+                      <td align="center" valign="top"><span id="chart-val-eie">249</span><br/><span data-i18n="res_points">Puntos</span></td>
+                      <td align="center" valign="top"><span id="chart-val-eio">227</span><br/><span data-i18n="res_points">Puntos</span></td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="bottom">
+                        <div id="chart-grey-cl" style="height:0px;width:40px;background-color:grey;margin:0 auto;">&nbsp;</div>
+                        <div id="chart-red-cl" style="height:125px;width:40px;background-color:red;margin:0 auto;">&nbsp;</div>
+                      </td>
+                      <td align="center" valign="bottom">
+                        <div id="chart-grey-ca" style="height:23px;width:40px;background-color:grey;margin:0 auto;">&nbsp;</div>
+                        <div id="chart-red-ca" style="height:102px;width:40px;background-color:red;margin:0 auto;">&nbsp;</div>
+                      </td>
+                      <td align="center" valign="bottom">
+                        <div id="chart-grey-eie" style="height:0px;width:40px;background-color:grey;margin:0 auto;">&nbsp;</div>
+                        <div id="chart-red-eie" style="height:124px;width:40px;background-color:red;margin:0 auto;">&nbsp;</div>
+                      </td>
+                      <td align="center" valign="bottom">
+                        <div id="chart-grey-eio" style="height:11px;width:40px;background-color:grey;margin:0 auto;">&nbsp;</div>
+                        <div id="chart-red-eio" style="height:113px;width:40px;background-color:red;margin:0 auto;">&nbsp;</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" data-i18n="res_cl">Comprensión de lectura</td>
+                      <td align="center" valign="top" data-i18n="res_ca">Comprensión auditiva</td>
+                      <td align="center" valign="top" data-i18n="res_eie">Expresión e interacción escritas</td>
+                      <td align="center" valign="top" data-i18n="res_eio">Expresión e interacción orales</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Portlet: Mis cursos -->
+        <section class="siele-portlet-box" id="portlet_sielemycourses_WAR_sieleportlet_INSTANCE_Y7fh6MUFkPuY">
+          <header class="portlet-topper">
+            <div class="portlet-title">
+              <span class="portlet-title-text" data-i18n="mipagina_my_courses">Mis cursos</span>
+            </div>
+          </header>
+
+          <div class="portlet-body">
+            <ul class="mycourses-table">
+              <li class="table-course-title">
+                <span class="table-course-img">
+                  <img src="images/portal/curso_objetivo_icon.png" alt="Objetivo SIELE" />
+                </span>
+                <span class="nameCourse" data-i18n="mipagina_course_title">
+                  Objetivo SIELE: preparación y práctica del examen SIELE Global
+                </span>
+                <span class="botonAcess">
+                  <a class="course-title" href="/prepare-siele" data-i18n="mipagina_course_btn">
+                    Comenzar
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer__links">
+      <div class="container">
+        <div class="footer__btns">
+          <a href="/comprobar-certificado" class="btn" id="btn-certificado" data-i18n="footer_cert">Comprobar Certificado</a>
+          <a href="/ayuda" class="btn" id="btn-ayuda" data-i18n="footer_ayuda">Ayuda</a>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/SIELE.org" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6c0-.9.6-1 1-1h3V1h-4c-4 0-5 3-5 5v2H6v4h3v11h5V12h3.5l.5-4z"/></svg></a>
+          <a href="https://twitter.com/SIELE_org" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"><path d="M13.7 10.3 20.4 2.5h-1.6l-5.8 6.8-4.7-6.8H2.9l7 10.2-7 8.2h1.6l6.1-7.1 4.9 7.1h5.4l-7.2-10.6zm-2.2 2.5-.7-1L5.1 3.7h2.4l4.6 6.5.7 1 5.9 8.5h-2.4l-4.8-6.9z"/></svg></a>
+          <a href="https://www.linkedin.com/company/siele" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M2 8h4.5v14H2zM4.2 1.5a2.6 2.6 0 1 1 0 5.2 2.6 2.6 0 0 1 0-5.2zM9 8h4.3v2h.1c.6-1.1 2.1-2.3 4.3-2.3 4.6 0 5.4 3 5.4 6.9V22h-4.5v-6.6c0-1.6 0-3.6-2.2-3.6s-2.5 1.7-2.5 3.5V22H9z"/></svg></a>
+          <a href="https://www.youtube.com/channel/UCcJZoqQ7Akk5ny714iUMHnQ" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1z"/></svg></a>
+          <a href="https://www.instagram.com/siele_oficial/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-9.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__logos">
+      <div class="container">
+        <div>
+          <div class="footer__label" data-i18n="footer_dev_by">Creado y desarrollado por:</div>
+          <div class="partners">
+            <a href="https://www.cervantes.es" target="_blank" rel="noopener" class="partner partner--cervantes" aria-label="Instituto Cervantes"><img src="images/partners/cervantes.png" alt="Instituto Cervantes" /></a>
+            <a href="https://www.unam.mx/" target="_blank" rel="noopener" class="partner partner--unam" aria-label="Universidad Nacional Autónoma de México"><img src="images/partners/unam.png" alt="UNAM" /></a>
+            <a href="https://www.usal.es" target="_blank" rel="noopener" class="partner partner--salamanca" aria-label="Universidad de Salamanca"><img src="images/partners/salamanca.png" alt="Universidad de Salamanca" /></a>
+            <a href="https://www.uba.ar/" target="_blank" rel="noopener" class="partner partner--uba" aria-label="Universidad de Buenos Aires"><img src="images/partners/uba.png" alt="Universidad de Buenos Aires" /></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__label" data-i18n="footer_managed_by">Gestionado por:</div>
+          <a href="https://www.telefonicaeducaciondigital.com/" target="_blank" rel="noopener" class="partner partner--telefonica" aria-label="Telefónica Educación Digital">
+            <img src="images/partners/telefonica.png" alt="Telefónica" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="subfooter">
+      <a href="/ayuda" data-i18n="subfooter_0">Aviso legal</a> | <a href="/ayuda" data-i18n="subfooter_1">Política de privacidad</a> | <a href="#" id="cookie-config" data-i18n="subfooter_2">Configuración de cookies</a> | <a href="/ayuda" data-i18n="subfooter_3">Términos y Condiciones de Contratación</a>
+    </div>
+  </footer>
+
+  <!-- ================= COOKIE BUTTON & BAR ================= -->
+  <button class="cookie-fab" id="cookie-fab" aria-label="Configuración de privacidad y cookies" title="Privacidad">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M21 12a9 9 0 1 1-9-9 3 3 0 0 0 3 3 3 3 0 0 0 3 3 3 3 0 0 0 3 3z"/><circle cx="8.5" cy="10" r="1.2"/><circle cx="9" cy="15.5" r="1.2"/><circle cx="14.5" cy="15" r="1.2"/></svg>
+  </button>
+
+  <div class="cookie-bar" id="cookie-bar" role="dialog" aria-label="Aviso de cookies">
+    <span id="cookie-text" data-i18n-html="cookie_text">Utilizamos cookies propias y de terceros para mejorar la calidad de nuestros servicios mediante el análisis de sus hábitos de navegación. Si continúa navegando, consideramos que acepta su uso. Puede cambiar la configuración u obtener más información <a href="#">aquí</a>.</span>
+    <button class="cookie-bar__close" id="cookie-close" aria-label="Cerrar">✕</button>
+  </div>
+
+  <!-- ================= MODAL: RESERVA TU EXAMEN ================= -->
+  <div class="modal-backdrop" id="modal-booking">
+    <div class="modal-card" role="dialog" aria-labelledby="modal-booking-title">
+      <button class="modal-close" id="modal-booking-close" aria-label="Cerrar">&times;</button>
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-booking-title" data-i18n="modal_reserva_title">Reserva tu Examen SIELE</h3>
+        <p class="modal-subtitle" data-i18n="modal_reserva_subtitle">Complete el formulario para solicitar fecha en su centro examinador más cercano.</p>
+      </div>
+
+      <div id="booking-alert" class="booking-alert"></div>
+
+      <form id="booking-form" class="booking-form">
+        <div class="booking-field">
+          <label for="book-name" data-i18n="modal_reserva_name">Nombre completo:</label>
+          <input type="text" id="book-name" required placeholder="Alejandro Morales" />
+        </div>
+        <div class="booking-field">
+          <label for="book-email" data-i18n="modal_reserva_email">Correo electrónico:</label>
+          <input type="email" id="book-email" required placeholder="candidato@email.com" />
+        </div>
+        <div class="booking-field">
+          <label for="book-phone" data-i18n="modal_reserva_phone">Teléfono:</label>
+          <input type="tel" id="book-phone" placeholder="+34 600 000 000" />
+        </div>
+        <div class="booking-field">
+          <label for="book-modality" data-i18n="modal_reserva_modality">Modalidad de examen:</label>
+          <select id="book-modality" required>
+            <option value="SIELE Global" data-i18n="modal_opt_global">SIELE Global (4 pruebas: CL + CA + EIE + EIO)</option>
+            <option value="S1" data-i18n="modal_opt_s1">S1 (Comprensión de Lectura + Auditiva)</option>
+            <option value="S2" data-i18n="modal_opt_s2">S2 (Comprensión de Lectura + Expresión Escrita)</option>
+            <option value="S3" data-i18n="modal_opt_s3">S3 (Comprensión Auditiva + Expresión Oral)</option>
+            <option value="S4" data-i18n="modal_opt_s4">S4 (Expresión e Interacción Orales)</option>
+            <option value="S5" data-i18n="modal_opt_s5">S5 (Expresión Escrita + Expresión Oral)</option>
+          </select>
+        </div>
+        <div class="booking-field booking-field--full">
+          <label for="book-date" data-i18n="modal_reserva_date">Fecha preferida:</label>
+          <input type="date" id="book-date" required />
+        </div>
+        <button type="submit" id="book-submit-btn" class="booking-submit-btn" data-i18n="modal_reserva_submit">Confirmar Reserva</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/translations.js"></script>
+  <script src="js/page-common.js"></script>
+  <script>
+    (function() {
+      // Redirect to /login if not signed in
+      const rawAuth = localStorage.getItem('siele_auth_user');
+      if (!rawAuth) {
+        window.location.href = '/login';
+        return;
+      }
+
+      let currentUser = null;
+      try {
+        currentUser = JSON.parse(rawAuth);
+      } catch (e) {
+        window.location.href = '/login';
+        return;
+      }
+
+      // Populate Birthday Day (1..31) & Year (1930..2026) selects
+      const daySel = document.getElementById('edit-birthdayDay');
+      const yearSel = document.getElementById('edit-birthdayYear');
+      const monthSel = document.getElementById('edit-birthdayMonth');
+
+      if (daySel) {
+        for (let d = 1; d <= 31; d++) {
+          const opt = document.createElement('option');
+          opt.value = String(d);
+          opt.textContent = String(d);
+          if (d === 30) opt.selected = true;
+          daySel.appendChild(opt);
+        }
+      }
+      if (yearSel) {
+        for (let y = 1940; y <= 2026; y++) {
+          const opt = document.createElement('option');
+          opt.value = String(y);
+          opt.textContent = String(y);
+          if (y === 1998) opt.selected = true;
+          yearSel.appendChild(opt);
+        }
+      }
+
+      function populateUI(u) {
+        if (!u) return;
+        const lang = localStorage.getItem('siele_lang') || 'es';
+        const dict = (window.TRANSLATIONS && window.TRANSLATIONS[lang]) || {};
+
+        document.getElementById('disp-firstName').textContent = u.firstName || 'Sayyoraxon';
+        document.getElementById('disp-lastName').textContent = u.lastName || 'Tojiddinova';
+        document.getElementById('disp-email').textContent = u.email || 'qilichbek00000@gmail.com';
+        document.getElementById('disp-phone').textContent = u.phone || '998918410105';
+        document.getElementById('disp-birthday').textContent = u.birthday || '30/11/1998';
+
+        const inscSpan = document.getElementById('disp-inscriptionMails');
+        if (inscSpan) {
+          const isYes = u.inscriptionMails !== false;
+          inscSpan.setAttribute('data-i18n', isYes ? 'mipagina_val_yes' : 'mipagina_val_no');
+          inscSpan.textContent = isYes ? (dict.mipagina_val_yes || 'Sí') : (dict.mipagina_val_no || 'No');
+        }
+
+        // Form fields
+        document.getElementById('edit-firstName').value = u.firstName || 'Sayyoraxon';
+        document.getElementById('edit-lastName').value = u.lastName || 'Tojiddinova';
+        document.getElementById('edit-email').value = u.email || 'qilichbek00000@gmail.com';
+        document.getElementById('edit-phone').value = u.phone || '998918410105';
+        if (u.birthdayDay && daySel) daySel.value = String(u.birthdayDay);
+        if (u.birthdayMonth !== undefined && monthSel) monthSel.value = String(u.birthdayMonth);
+        if (u.birthdayYear && yearSel) yearSel.value = String(u.birthdayYear);
+        document.getElementById('edit-inscriptionMails').checked = u.inscriptionMails !== false;
+
+        // Candidate info & Certificate links inside Mis exámenes / Reservation Details
+        const fullName = u.fullName || `${u.lastName || 'Tojiddinova'}, ${u.firstName || 'Sayyoraxon'}`;
+        document.getElementById('res-cand-fullname').textContent = fullName;
+        document.getElementById('res-cand-email').textContent = u.email || 'qilichbek00000@gmail.com';
+        document.getElementById('res-cand-phone').textContent = u.phone || '998918410105';
+        if (u.id) document.getElementById('res-cand-userid').textContent = u.id;
+        if (u.document) document.getElementById('res-cand-document').textContent = u.document;
+
+        const certEsHref = `/api/certificates/pdf/es?email=${encodeURIComponent(u.email || '')}`;
+        const certEnHref = `/api/certificates/pdf/en?email=${encodeURIComponent(u.email || '')}`;
+        const certEsLink = document.getElementById('action-view-cert-es');
+        const certEnLink = document.getElementById('action-view-cert-en');
+        const rowIconLink = document.getElementById('exam-row-cert-icon-link');
+        const rowTitleLink = document.getElementById('exam-row-cert-title-link');
+        if (certEsLink) certEsLink.href = certEsHref;
+        if (certEnLink) certEnLink.href = certEnHref;
+        if (rowIconLink) rowIconLink.href = certEsHref;
+        if (rowTitleLink) rowTitleLink.href = certEsHref;
+
+        const exam = Array.isArray(u.exams) && u.exams[0] ? u.exams[0] : null;
+        if (exam) {
+          if (exam.linkedinUrl) {
+            const lnk = document.getElementById('action-share-linkedin');
+            if (lnk) lnk.href = exam.linkedinUrl;
+          }
+          if (exam.reservationInfo && exam.reservationInfo.reservationCode) {
+            document.getElementById('res-code').textContent = exam.reservationInfo.reservationCode;
+          }
+          if (exam.resultsInfo) {
+            const { cl = 250, ca = 204, eie = 249, eio = 227, total = 930 } = exam.resultsInfo;
+            document.getElementById('res-score-cl').textContent = cl;
+            document.getElementById('res-score-ca').textContent = ca;
+            document.getElementById('res-score-eie').textContent = eie;
+            document.getElementById('res-score-eio').textContent = eio;
+            document.getElementById('res-score-total').textContent = total;
+            document.getElementById('chart-val-cl').textContent = cl;
+            document.getElementById('chart-val-ca').textContent = ca;
+            document.getElementById('chart-val-eie').textContent = eie;
+            document.getElementById('chart-val-eio').textContent = eio;
+
+            const setBar = (key, val) => {
+              const redH = Math.round((val / 250) * 125);
+              const greyH = Math.max(0, 125 - redH);
+              const rEl = document.getElementById('chart-red-' + key);
+              const gEl = document.getElementById('chart-grey-' + key);
+              if (rEl) rEl.style.height = redH + 'px';
+              if (gEl) gEl.style.height = greyH + 'px';
+            };
+            setBar('cl', cl);
+            setBar('ca', ca);
+            setBar('eie', eie);
+            setBar('eio', eio);
+          }
+        }
+
+        if (typeof window.renderHeaderAuthState === 'function') {
+          window.renderHeaderAuthState();
+        }
+      }
+
+      populateUI(currentUser);
+
+      // Sync latest profile from backend
+      fetch('/api/user/profile?email=' + encodeURIComponent(currentUser.email || 'qilichbek00000@gmail.com'))
+        .then(r => r.json())
+        .then(data => {
+          if (data && data.success && data.user) {
+            currentUser = { ...currentUser, ...data.user };
+            localStorage.setItem('siele_auth_user', JSON.stringify(currentUser));
+            populateUI(currentUser);
+          }
+        })
+        .catch(() => {});
+
+      // View switching inside Mi perfil
+      const viewDefault = document.getElementById('profile-view-default');
+      const viewEdit = document.getElementById('profile-view-edit');
+      const viewPass = document.getElementById('profile-view-password');
+      const profileFeedback = document.getElementById('profile-feedback');
+
+      document.getElementById('btn-open-edit-profile').addEventListener('click', () => {
+        profileFeedback.style.display = 'none';
+        viewDefault.style.display = 'none';
+        viewPass.style.display = 'none';
+        viewEdit.style.display = 'block';
+      });
+
+      document.getElementById('btn-cancel-edit-profile').addEventListener('click', () => {
+        profileFeedback.style.display = 'none';
+        viewEdit.style.display = 'none';
+        viewDefault.style.display = 'block';
+      });
+
+      document.getElementById('btn-open-change-password').addEventListener('click', () => {
+        profileFeedback.style.display = 'none';
+        viewDefault.style.display = 'none';
+        viewEdit.style.display = 'none';
+        viewPass.reset();
+        viewPass.style.display = 'block';
+      });
+
+      document.getElementById('btn-cancel-change-password').addEventListener('click', () => {
+        profileFeedback.style.display = 'none';
+        viewPass.style.display = 'none';
+        viewDefault.style.display = 'block';
+      });
+
+      // Submit Edit Profile
+      viewEdit.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const payload = {
+          email: currentUser.email,
+          firstName: document.getElementById('edit-firstName').value.trim(),
+          lastName: document.getElementById('edit-lastName').value.trim(),
+          phone: document.getElementById('edit-phone').value.trim(),
+          birthdayDay: Number(daySel.value),
+          birthdayMonth: Number(monthSel.value),
+          birthdayYear: Number(yearSel.value),
+          inscriptionMails: document.getElementById('edit-inscriptionMails').checked
+        };
+
+        try {
+          const res = await fetch('/api/user/profile', {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+          const data = await res.json();
+          if (res.ok && data.success && data.user) {
+            currentUser = { ...currentUser, ...data.user };
+            localStorage.setItem('siele_auth_user', JSON.stringify(currentUser));
+            populateUI(currentUser);
+            const lang = localStorage.getItem('siele_lang') || 'es';
+            const okMsg = (window.TRANSLATIONS && window.TRANSLATIONS[lang] && window.TRANSLATIONS[lang].mipagina_save_success) || data.message;
+            profileFeedback.className = 'siele-portlet-msg-success';
+            profileFeedback.textContent = okMsg;
+            profileFeedback.style.display = 'block';
+            viewEdit.style.display = 'none';
+            viewDefault.style.display = 'block';
+          } else {
+            profileFeedback.className = 'siele-portlet-msg-error';
+            profileFeedback.textContent = data.message || 'Error al guardar los datos.';
+            profileFeedback.style.display = 'block';
+          }
+        } catch (err) {
+          profileFeedback.className = 'siele-portlet-msg-error';
+          profileFeedback.textContent = 'Error de conexión con el servidor.';
+          profileFeedback.style.display = 'block';
+        }
+      });
+
+      // Submit Change Password
+      viewPass.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const passwordActually = document.getElementById('pass-current').value;
+        const passwordNew = document.getElementById('pass-new').value;
+        const passwordNew2 = document.getElementById('pass-repeat').value;
+
+        try {
+          const res = await fetch('/api/user/password', {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              email: currentUser.email,
+              passwordActually,
+              passwordNew,
+              passwordNew2
+            })
+          });
+          const data = await res.json();
+          if (res.ok && data.success) {
+            const lang = localStorage.getItem('siele_lang') || 'es';
+            const okMsg = (window.TRANSLATIONS && window.TRANSLATIONS[lang] && window.TRANSLATIONS[lang].mipagina_save_success) || data.message;
+            profileFeedback.className = 'siele-portlet-msg-success';
+            profileFeedback.textContent = okMsg;
+            profileFeedback.style.display = 'block';
+            viewPass.style.display = 'none';
+            viewDefault.style.display = 'block';
+          } else {
+            profileFeedback.className = 'siele-portlet-msg-error';
+            profileFeedback.textContent = data.message || 'Error al cambiar la contraseña.';
+            profileFeedback.style.display = 'block';
+          }
+        } catch (err) {
+          profileFeedback.className = 'siele-portlet-msg-error';
+          profileFeedback.textContent = 'Error de conexión con el servidor.';
+          profileFeedback.style.display = 'block';
+        }
+      });
+
+      // Actions Dropdown Menu in Mis exámenes
+      const actionsTrigger = document.getElementById('exam-actions-trigger');
+      const actionsMenu = document.getElementById('exam-actions-menu');
+      const examsViewList = document.getElementById('exams-view-list');
+      const examsViewDetails = document.getElementById('exams-view-details');
+
+      if (actionsTrigger && actionsMenu) {
+        actionsTrigger.addEventListener('click', (e) => {
+          e.stopPropagation();
+          actionsMenu.style.display = actionsMenu.style.display === 'none' ? 'block' : 'none';
+        });
+      }
+
+      document.addEventListener('click', () => {
+        if (actionsMenu) actionsMenu.style.display = 'none';
+      });
+
+      document.getElementById('action-open-res-details').addEventListener('click', (e) => {
+        e.preventDefault();
+        if (actionsMenu) actionsMenu.style.display = 'none';
+        examsViewList.style.display = 'none';
+        examsViewDetails.style.display = 'block';
+      });
+
+      document.getElementById('btn-back-to-exams').addEventListener('click', (e) => {
+        e.preventDefault();
+        examsViewDetails.style.display = 'none';
+        examsViewList.style.display = 'block';
+      });
+    })();
+  </script>
+</body>
+</html>
+
