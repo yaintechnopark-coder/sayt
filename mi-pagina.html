@@ -660,16 +660,18 @@
         if (u.id) document.getElementById('res-cand-userid').textContent = u.id;
         if (u.document) document.getElementById('res-cand-document').textContent = u.document;
 
-        const certEsHref = `/api/certificates/pdf/es?email=${encodeURIComponent(u.email || '')}`;
-        const certEnHref = `/api/certificates/pdf/en?email=${encodeURIComponent(u.email || '')}`;
+        const pdfFileName = u.pdfFile || (u.exams && u.exams[0] && u.exams[0].pdfFile) || 'SIELE_Certificado_Oficial.pdf';
+        const pdfFileNameEn = u.pdfFileEn || (u.exams && u.exams[0] && u.exams[0].pdfFileEn) || pdfFileName;
+        const certEsHref = `/data/${pdfFileName}`;
+        const certEnHref = `/data/${pdfFileNameEn}`;
         const certEsLink = document.getElementById('action-view-cert-es');
         const certEnLink = document.getElementById('action-view-cert-en');
         const rowIconLink = document.getElementById('exam-row-cert-icon-link');
         const rowTitleLink = document.getElementById('exam-row-cert-title-link');
-        if (certEsLink) certEsLink.href = certEsHref;
-        if (certEnLink) certEnLink.href = certEnHref;
-        if (rowIconLink) rowIconLink.href = certEsHref;
-        if (rowTitleLink) rowTitleLink.href = certEsHref;
+        if (certEsLink) { certEsLink.href = certEsHref; certEsLink.setAttribute('download', pdfFileName); }
+        if (certEnLink) { certEnLink.href = certEnHref; certEnLink.setAttribute('download', pdfFileNameEn); }
+        if (rowIconLink) { rowIconLink.href = certEsHref; rowIconLink.setAttribute('download', pdfFileName); }
+        if (rowTitleLink) { rowTitleLink.href = certEsHref; rowTitleLink.setAttribute('download', pdfFileName); }
 
         const exam = Array.isArray(u.exams) && u.exams[0] ? u.exams[0] : null;
         if (exam) {

@@ -1,15 +1,11 @@
 {
   "cleanUrls": true,
   "functions": {
-    "server.js": {
-      "includeFiles": "{css/**,js/**,images/**,data/**,*.html,favicon.ico}"
-    },
-    "api/index.js": {
-      "includeFiles": "{css/**,js/**,images/**,data/**,*.html,favicon.ico}"
+    "api/**/*.js": {
+      "includeFiles": "data/**"
     }
   },
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index.js" },
     { "source": "/home", "destination": "/index.html" },
     { "source": "/prepare-siele", "destination": "/prepare-siele.html" },
     { "source": "/comprobar-certificado", "destination": "/comprobar-certificado.html" },

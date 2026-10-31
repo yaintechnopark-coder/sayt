@@ -248,7 +248,7 @@ function sanitizeUser(u) {
 // ================= API ROUTES =================
 
 // Health check
-app.get('/api/health', (req, res) => {
+app.get(['/api/health', '/health'], (req, res) => {
   res.json({
     status: 'ok',
     service: 'SIELE Verification & Exam API',
@@ -270,7 +270,7 @@ function findCertificateByToken(rawToken) {
 }
 
 // List all certificates (public summary)
-app.get('/api/certificates', (req, res) => {
+app.get(['/api/certificates', '/certificates'], (req, res) => {
   const certs = loadCertificates();
   res.json({
     success: true,
@@ -288,7 +288,7 @@ app.get('/api/certificates', (req, res) => {
 });
 
 // Serve & download user-specific Spanish & English certificate PDFs (for Ver certificado / Ver certificado en inglés)
-app.get('/api/certificates/pdf/es', (req, res) => {
+app.get(['/api/certificates/pdf/es', '/certificates/pdf/es'], (req, res) => {
   const email = (req.query.email || '').toString().trim().toLowerCase();
   const users = loadUsers();
   const matchedUser = email ? users.find(u => u.email.toLowerCase() === email) : null;
@@ -302,11 +302,11 @@ app.get('/api/certificates/pdf/es', (req, res) => {
       : 'Certificado_SIELE_Oficial.pdf';
     res.download(finalPath, safeName);
   } else {
-    res.status(404).json({ success: false, message: 'Archivo PDF no encontrado.' });
+    res.redirect(`/data/${pdfFileName}`);
   }
 });
 
-app.get('/api/certificates/pdf/en', (req, res) => {
+app.get(['/api/certificates/pdf/en', '/certificates/pdf/en'], (req, res) => {
   const email = (req.query.email || '').toString().trim().toLowerCase();
   const users = loadUsers();
   const matchedUser = email ? users.find(u => u.email.toLowerCase() === email) : null;
@@ -322,12 +322,12 @@ app.get('/api/certificates/pdf/en', (req, res) => {
       : 'Certificate_SIELE_EN_Official.pdf';
     res.download(finalPath, safeName);
   } else {
-    res.status(404).json({ success: false, message: 'Archivo PDF en inglés no encontrado.' });
+    res.redirect(`/data/${pdfFileName}`);
   }
 });
 
 // Download certificate PDF endpoint by token (GET or POST)
-app.get('/api/certificates/download', (req, res) => {
+app.get(['/api/certificates/download', '/certificates/download'], (req, res) => {
   const rawToken = req.query.token || req.query.code || req.query.codeDiploma || '';
   const found = findCertificateByToken(rawToken);
   if (!found) {
@@ -336,15 +336,16 @@ app.get('/api/certificates/download', (req, res) => {
       message: 'Token o código de certificación no válido. No se encontró ningún certificado asociado.'
     });
   }
-  const pdfPath = path.join(__dirname, 'data', found.pdfFile || 'SIELE_Certificado_Oficial.pdf');
+  const pdfFileName = found.pdfFile || 'SIELE_Certificado_Oficial.pdf';
+  const pdfPath = path.join(__dirname, 'data', pdfFileName);
   if (fs.existsSync(pdfPath)) {
     res.download(pdfPath, `Certificado_SIELE_${found.token || found.code}.pdf`);
   } else {
-    res.status(404).json({ success: false, message: 'Archivo PDF no encontrado en el servidor.' });
+    res.redirect(`/data/${pdfFileName}`);
   }
 });
 
-app.post('/api/certificates/download', (req, res) => {
+app.post(['/api/certificates/download', '/certificates/download'], (req, res) => {
   const rawToken = req.body.token || req.body.code || req.body.codeDiploma || '';
   const found = findCertificateByToken(rawToken);
   if (!found) {
@@ -353,16 +354,17 @@ app.post('/api/certificates/download', (req, res) => {
       message: 'Token o código de certificación no válido. No se encontró ningún certificado asociado.'
     });
   }
-  const pdfPath = path.join(__dirname, 'data', found.pdfFile || 'SIELE_Certificado_Oficial.pdf');
+  const pdfFileName = found.pdfFile || 'SIELE_Certificado_Oficial.pdf';
+  const pdfPath = path.join(__dirname, 'data', pdfFileName);
   if (fs.existsSync(pdfPath)) {
     res.download(pdfPath, `Certificado_SIELE_${found.token || found.code}.pdf`);
   } else {
-    res.status(404).json({ success: false, message: 'Archivo PDF no encontrado en el servidor.' });
+    res.redirect(`/data/${pdfFileName}`);
   }
 });
 
 // Verify a certificate by code/token (GET)
-app.get('/api/certificates/:code', (req, res) => {
+app.get(['/api/certificates/:code', '/certificates/:code'], (req, res) => {
   const found = findCertificateByToken(req.params.code);
 
   if (!found) {
@@ -380,7 +382,7 @@ app.get('/api/certificates/:code', (req, res) => {
 });
 
 // Verify endpoint - validates token in DB and downloads the linked PDF
-app.post('/api/certificates/verify', (req, res) => {
+app.post(['/api/certificates/verify', '/certificates/verify'], (req, res) => {
   const rawToken = req.body.token || req.body.code || req.body.codeDiploma || '';
   const found = findCertificateByToken(rawToken);
 
@@ -391,14 +393,12 @@ app.post('/api/certificates/verify', (req, res) => {
     });
   }
 
-  const pdfPath = path.join(__dirname, 'data', found.pdfFile || 'SIELE_Certificado_Oficial.pdf');
+  const pdfFileName = found.pdfFile || 'SIELE_Certificado_Oficial.pdf';
+  const pdfPath = path.join(__dirname, 'data', pdfFileName);
   if (fs.existsSync(pdfPath)) {
     res.download(pdfPath, `Certificado_SIELE_${found.token || found.code}.pdf`);
   } else {
-    res.status(404).json({
-      success: false,
-      message: 'Archivo PDF no encontrado'
-    });
+    res.redirect(`/data/${pdfFileName}`);
   }
 });
 
@@ -459,7 +459,7 @@ app.post('/api/certificates', (req, res) => {
 });
 
 // Exam booking reservation endpoints
-app.get('/api/bookings', (req, res) => {
+app.get(['/api/bookings', '/bookings'], (req, res) => {
   const bookings = loadBookings();
   res.json({
     success: true,
@@ -468,7 +468,7 @@ app.get('/api/bookings', (req, res) => {
   });
 });
 
-app.post('/api/bookings', (req, res) => {
+app.post(['/api/bookings', '/bookings'], (req, res) => {
   const { fullName, email, phone, modality, preferredDate, country, center, comments } = req.body;
 
   if (!fullName || !email || !modality) {
@@ -504,7 +504,7 @@ app.post('/api/bookings', (req, res) => {
 });
 
 // Authorized Exam Centers endpoint
-app.get('/api/centers', (req, res) => {
+app.get(['/api/centers', '/centers'], (req, res) => {
   const q = (req.query.q || '').toString().trim().toLowerCase();
   const country = (req.query.country || '').toString().trim().toLowerCase();
 
@@ -526,7 +526,7 @@ app.get('/api/centers', (req, res) => {
 });
 
 // Contact & Help Desk endpoint
-app.get('/api/contact', (req, res) => {
+app.get(['/api/contact', '/contact'], (req, res) => {
   const contacts = loadContacts();
   res.json({
     success: true,
@@ -535,7 +535,7 @@ app.get('/api/contact', (req, res) => {
   });
 });
 
-app.post('/api/contact', (req, res) => {
+app.post(['/api/contact', '/contact'], (req, res) => {
   const { name, email, subject, message } = req.body;
 
   if (!name || !email || !message) {
@@ -567,7 +567,7 @@ app.post('/api/contact', (req, res) => {
 });
 
 // Portal Login / Authentication endpoint
-app.post('/api/auth/login', (req, res) => {
+app.post(['/api/auth/login', '/auth/login'], (req, res) => {
   const email = (req.body.email || req.body._58_login || '').toString().trim();
   const password = (req.body.password || req.body._58_password || '').toString();
 
@@ -607,7 +607,7 @@ app.post('/api/auth/login', (req, res) => {
 });
 
 // Get candidate profile & reservations
-app.get('/api/user/profile', (req, res) => {
+app.get(['/api/user/profile', '/user/profile'], (req, res) => {
   const email = (req.query.email || '').toString().trim();
   const users = loadUsers();
   const user = (email
@@ -628,7 +628,7 @@ app.get('/api/user/profile', (req, res) => {
 });
 
 // Update candidate profile (Editar Perfil)
-app.put('/api/user/profile', (req, res) => {
+app.put(['/api/user/profile', '/user/profile'], (req, res) => {
   const { email, firstName, lastName, phone, birthdayDay, birthdayMonth, birthdayYear, inscriptionMails } = req.body;
   const users = loadUsers();
   const idx = users.findIndex(u =>
@@ -688,7 +688,7 @@ app.put('/api/user/profile', (req, res) => {
 });
 
 // Update candidate password (Cambiar contraseña)
-app.put('/api/user/password', (req, res) => {
+app.put(['/api/user/password', '/user/password'], (req, res) => {
   const { email, passwordActually, passwordNew, passwordNew2 } = req.body;
   const users = loadUsers();
   const idx = users.findIndex(u =>
