@@ -27,7 +27,7 @@
         "pdfFileEn": "SIELE_Certificado_Oficial_EN.pdf",
         "certificateEsUrl": "/api/certificates/pdf/es?email=qilichbek00000%40gmail.com",
         "certificateEnUrl": "/api/certificates/pdf/en?email=qilichbek00000%40gmail.com",
-        "linkedinUrl": "https://www.linkedin.com/profile/add?_ed=0_HtJMp8IScSj4hxAPkhaIcOPhx__k9NQlVW9kRYN2Vvwv3WERdSRzEXIw1DbKH-INaSgvthvZk7wTBMS3S-m0L6A6mLjErM6PJiwMkk6nYZylU7__75hCVwJdOTZCAkdv&pfCertificationName=SIELE+Global&pfCertificationUrl=https%3A%2F%2Fsiele.org%2Fcomprobar-certificado%2F&pfLicenseNo=TC5yiNIEszhWBiNEt4D5tw%3D%3D&trk=onsite_longurl",
+        "linkedinUrl": "https://www.linkedin.com/profile/add?_ed=0_HtJMp8IScSj4hxAPkhaIcOPhx__k9NQlVW9kRYN2Vvwv3WERdSRzEXIw1DbKH-INaSgvthvZk7wTBMS3S-m0L6A6mLjErM6PJiwMkk6nYZylU7__75hCVwJdOTZCAkdv&pfCertificationName=SIELE+Global&pfCertificationUrl=https%3A%2F%2Fsieles.org%2Fcomprobar-certificado%2F&pfLicenseNo=TC5yiNIEszhWBiNEt4D5tw%3D%3D&trk=onsite_longurl",
         "sessionInfo": {
           "sessionTypeKey": "presencial",
           "exam": "SIELE Global",
@@ -82,14 +82,14 @@
     "lastName": "Toshbekov",
     "fullName": "Toshbekov, Abduvohid",
     "phone": "998901234567",
-    "birthday": "15/05/2000",
-    "birthdayDay": 15,
-    "birthdayMonth": 4,
+    "birthday": "01/08/2000",
+    "birthdayDay": 1,
+    "birthdayMonth": 7,
     "birthdayYear": 2000,
     "inscriptionMails": true,
-    "document": "Documento Identidad - AD2000451",
+    "document": "Documento Identidad - AB5906006",
     "pdfFile": "SIELE_Certificado_Abduvohid.pdf",
-    "pdfFileEn": "SIELE_Certificado_Abduvohid_EN.pdf",
+    "pdfFileEn": "SIELE_Certificado_Abduvohid.pdf",
     "role": "candidato",
     "exams": [
       {
@@ -99,10 +99,10 @@
         "statusKey": "graded",
         "codeDiploma": "K9mXvR7pQ2wLz8nJ4bY6cA==",
         "pdfFile": "SIELE_Certificado_Abduvohid.pdf",
-        "pdfFileEn": "SIELE_Certificado_Abduvohid_EN.pdf",
+        "pdfFileEn": "SIELE_Certificado_Abduvohid.pdf",
         "certificateEsUrl": "/api/certificates/pdf/es?email=toshbekov2000abduvohid%40gmail.com",
         "certificateEnUrl": "/api/certificates/pdf/en?email=toshbekov2000abduvohid%40gmail.com",
-        "linkedinUrl": "https://www.linkedin.com/profile/add?_ed=0_HtJMp8IScSj4hxAPkhaIcOPhx__k9NQlVW9kRYN2Vvwv3WERdSRzEXIw1DbKH-INaSgvthvZk7wTBMS3S-m0L6A6mLjErM6PJiwMkk6nYZylU7__75hCVwJdOTZCAkdv&pfCertificationName=SIELE+Global&pfCertificationUrl=https%3A%2F%2Fsiele.org%2Fcomprobar-certificado%2F&pfLicenseNo=K9mXvR7pQ2wLz8nJ4bY6cA%3D%3D&trk=onsite_longurl",
+        "linkedinUrl": "https://www.linkedin.com/profile/add?_ed=0_HtJMp8IScSj4hxAPkhaIcOPhx__k9NQlVW9kRYN2Vvwv3WERdSRzEXIw1DbKH-INaSgvthvZk7wTBMS3S-m0L6A6mLjErM6PJiwMkk6nYZylU7__75hCVwJdOTZCAkdv&pfCertificationName=SIELE+Global&pfCertificationUrl=https%3A%2F%2Fsieles.org%2Fcomprobar-certificado%2F&pfLicenseNo=K9mXvR7pQ2wLz8nJ4bY6cA%3D%3D&trk=onsite_longurl",
         "sessionInfo": {
           "sessionTypeKey": "presencial",
           "exam": "SIELE Global",
@@ -128,15 +128,15 @@
           "userId": "31709812",
           "fullName": "Toshbekov, Abduvohid",
           "email": "toshbekov2000abduvohid@gmail.com",
-          "document": "Documento Identidad - AD2000451",
+          "document": "Documento Identidad - AB5906006",
           "phone": "998901234567"
         },
         "resultsInfo": {
-          "cl": 240,
-          "ca": 215,
-          "eie": 235,
-          "eio": 225,
-          "total": 915
+          "cl": 179,
+          "ca": 165,
+          "eie": 169,
+          "eio": 180,
+          "total": 693
         }
       }
     ],
