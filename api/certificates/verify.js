@@ -41,3 +41,4 @@ module.exports = (req, res) => {
     pdfUrl: `/data/${found.pdfFile || 'SIELE_Certificado_Oficial.pdf'}`
   });
 };
+

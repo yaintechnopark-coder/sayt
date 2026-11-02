@@ -148,5 +148,80 @@
         "url": "/prepare-siele"
       }
     ]
+  },
+  {
+    "id": "31710245",
+    "email": "xudoynazarov.murad@gmail.com",
+    "password": "7KtR9?vbxm",
+    "firstName": "Murad",
+    "lastName": "Xudoynazarov",
+    "fullName": "Xudoynazarov, Murad",
+    "phone": "998901234567",
+    "birthday": "11/02/1984",
+    "birthdayDay": 11,
+    "birthdayMonth": 1,
+    "birthdayYear": 1984,
+    "inscriptionMails": true,
+    "document": "Documento Identidad - AE2182206",
+    "pdfFile": "SIELE_Certificado_Murad.pdf",
+    "pdfFileEn": "SIELE_Certificado_Murad.pdf",
+    "role": "candidato",
+    "exams": [
+      {
+        "reservationId": "4724120",
+        "examName": "SIELE Global",
+        "icon": "images/portal/siele_global_icon.png",
+        "statusKey": "graded",
+        "codeDiploma": "NxjsMBPLHxYgIeWJVEOl78==",
+        "pdfFile": "SIELE_Certificado_Murad.pdf",
+        "pdfFileEn": "SIELE_Certificado_Murad.pdf",
+        "certificateEsUrl": "/data/SIELE_Certificado_Murad.pdf",
+        "certificateEnUrl": "/data/SIELE_Certificado_Murad.pdf",
+        "linkedinUrl": "https://www.linkedin.com/profile/add?_ed=0_HtJMp8IScSj4hxAPkhaIcOPhx__k9NQlVW9kRYN2Vvwv3WERdSRzEXIw1DbKH-INaSgvthvZk7wTBMS3S-m0L6A6mLjErM6PJiwMkk6nYZylU7__75hCVwJdOTZCAkdv&pfCertificationName=SIELE+Global&pfCertificationUrl=https%3A%2F%2Fsieles.org%2Fcomprobar-certificado%2F&pfLicenseNo=NxjsMBPLHxYgIeWJVEOl78%3D%3D&trk=onsite_longurl",
+        "sessionInfo": {
+          "sessionTypeKey": "presencial",
+          "exam": "SIELE Global",
+          "startDate": "21-09-2026 15:02",
+          "endDate": "21-09-2026 18:32",
+          "center": "Asliddin School",
+          "address": "Paxtazor 28, Qarshi, Uzbekistán",
+          "room": "Test room 3",
+          "country": "Uzbekistán",
+          "region": "Qashqadaryo Province",
+          "locality": "Qarshi"
+        },
+        "reservationInfo": {
+          "reservationCode": "4724120",
+          "stateKey": "purchased",
+          "purchaseDate": "18-08-2026",
+          "purchasePrice": "0.0€",
+          "price": "145.0€",
+          "couponCode": "LYMFTZCOOM",
+          "reservationStatusKey": "graded"
+        },
+        "candidateInfo": {
+          "userId": "31710245",
+          "fullName": "Xudoynazarov, Murad",
+          "email": "xudoynazarov.murad@gmail.com",
+          "document": "Documento Identidad - AE2182206",
+          "phone": "998901234567"
+        },
+        "resultsInfo": {
+          "cl": 226,
+          "ca": 211,
+          "eie": 171,
+          "eio": 185,
+          "total": 793
+        }
+      }
+    ],
+    "courses": [
+      {
+        "id": "curso-objetivo-siele",
+        "name": "Objetivo SIELE: preparación y práctica del examen SIELE Global",
+        "icon": "images/portal/curso_objetivo_icon.png",
+        "url": "/prepare-siele"
+      }
+    ]
   }
 ]

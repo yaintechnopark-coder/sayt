@@ -71,3 +71,4 @@ module.exports = (req, res) => {
   // If file path not resolved in lambda filesystem, redirect directly to static CDN URL
   return res.redirect(302, `/data/${pdfFileName}`);
 };
+

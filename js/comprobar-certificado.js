@@ -99,6 +99,10 @@
   }
 
   const FALLBACK_CERTIFICATES = {
+    'nxjsmbplhxygiewjveol78==': {
+      pdf: '/data/SIELE_Certificado_Murad.pdf',
+      name: 'Certificado_SIELE_Xudoynazarov_Murad.pdf'
+    },
     'k9xvr7pq2wlz8nj4by6ca==': {
       pdf: '/data/SIELE_Certificado_Abduvohid.pdf',
       name: 'Certificado_SIELE_Toshbekov_Abduvohid.pdf'
